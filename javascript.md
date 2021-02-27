@@ -138,8 +138,7 @@
    html '<'  은  '&lt;' 로 표현한다 
 
 ## 7. 조건문 
-<pre>
-<code>
+```javascript
 document .write("1");
 if (true){
       document.write("2");
@@ -147,8 +146,7 @@ if (true){
      document.write("3");
 }
 document.write("4");	
-</code>
-</pre>
+```
 
 
 ===> if (  true or false  ) {  A  } else { B  }   
@@ -165,8 +163,7 @@ document.write("4");
 * 리팩토링: 비효울적인 코드를 효율적으로 만들어 가독성을 높이고 유지보수가 쉽도록 코드를 개선 
 
 ### 9-1. this: 이벤트가 속해 있는 자신을 가르킴 (따로 id, class명을 설정하지 않아도 됨)
-<pre>
-<code>
+```javascript
     if(document.querySelector('#night_day').value ==='night'){
     document.querySelector('body').style.backgroundColor='black';
     document.querySelector('body').style.color='white';
@@ -176,11 +173,9 @@ document.write("4");
     document.querySelector('body').style.color='black';
     document.querySelector('#night_day').value='night';
     }
-</code>
-</pre>
+```
 
-<pre>
-<code>
+```javascript
     if(this.value ==='night'){
     document.querySelector('body').style.backgroundColor='black';
     document.querySelector('body').style.color='white';
@@ -190,32 +185,27 @@ document.write("4");
     document.querySelector('body').style.color='black';
     this.value='night';
     }
-</code>
-</pre>
+```
 
 * 코딩을 잘하는 tip : 중복되는 코드 제거!
 
 ### 9-2. 중복되는 코드 이름 설정 
-<pre>
-<code>
+```javascript
     if(this.value ==='night'){
     document.querySelector('body').style.backgroundColor='black';
     document.querySelector('body').style.color='white';
     this.value='day';
     }
-</code>
-</pre>
+```
 
-<pre>
-<code>
+```javascript
    var target = document.querySelector('body');	
     if(this.value ==='night'){
     target.style.backgroundColor='black';
     target.style.color='white';
     this.value='day';
     }
-</code>
-</pre>
+```
 
 ## 10. 배열(Array)
 *  [ "값1", "값2" ]
@@ -257,15 +247,13 @@ document.write("4");
 * 음료 나옴 : 출력 
 * 함수 : 입력와 출력으로 이루어져 있음 
 
-<pre>
-<code>
+```javascript
   function sum( left, right){
            document.write(left+right);
   }
   sum(2,3);
   sum(3,4);
-</code>
-</pre>
+```
 
 * (left, right) => 매개변수 
 * (2,3)/(3,4) => 인자 
