@@ -127,7 +127,7 @@ class App extends Component {
   }
 }
 ```
-* public 폴더 > index.html  에서 <div id= "root"> </div> 안에 컴포넌트가 입력됨
+* public 폴더 > index.html  에서 #root안에 컴포넌트가 입력됨
 * src 폴더 > index.js 에서  <App />안에서 내용이 입력 및 수정 됨
 * document.getElementById( 'root' )  =>  <App /> 파일을 root로 가져간다는 의미 
 * src 폴더 > App.js  에서  <App /> 내용을 보고, 입력 및 수정 할 수 있음
