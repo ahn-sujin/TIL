@@ -50,7 +50,7 @@
 ## 3. 개발환경 종류
 * tip: 공식 문서에 익숙해 질 것! 
 
-[React – 사용자 인터페이스를 만들기 위한 JavaScript 라이브러리](https://reactjs.org/) 
+  [React설치 사이트 이동](https://reactjs.org/) 
 
 ### 3-1. Add React to a Website
 * 부분적으로 리액트 기능을 추가 할 때 
@@ -63,7 +63,7 @@
 
 ## 4. npm을 이용해서 Create React App 설치
 
-[Node.js](https://nodejs.org/en/)
+  [Node.js설치 사이트 이동](https://nodejs.org/en/)
 
 ### 4-1. npm설치
 * LTS는 안정화된 버전 , Current는 가장 최신화 버전
