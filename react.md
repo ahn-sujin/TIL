@@ -101,7 +101,7 @@
 
 * App.js 파일의 입력 방식을 함수방식에서 클라스 방식으로 바꿀 때,  오류 또는 실행이 되지 않는 경우
 
-=> '첫 줄'에 import React, { Component } from 'react'; 또 함께 입력 되었는지 확인!
+  => '첫 줄'에 import React, { Component } from 'react'; 또 함께 입력 되었는지 확인!
 
 ## 8. CSS 코딩하는 법 
 * index.css 
