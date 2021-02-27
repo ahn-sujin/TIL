@@ -93,6 +93,7 @@
 * 실행 되지 않을 때 VScode welcome 페이지에서 open folder로 디렉토리 열기 (해당 디렉토리 단독으로 실행 되어야 함)
 
 ## 7. JS 코딩하는 법 
+### index.js 
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -107,6 +108,24 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+```
+
+### App.js 
+```javascript
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+
+      <div className="App">
+        Hello, React!!
+      </div>
+    );
+  }
+}
 ```
 * public 폴더 > index.html  에서 <div id= "root"> </div> 안에 컴포넌트가 입력됨
 * src 폴더 > index.js 에서  <App />안에서 내용이 입력 및 수정 됨
