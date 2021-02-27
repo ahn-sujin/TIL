@@ -69,7 +69,7 @@
 * LTS는 안정화된 버전 , Current는 가장 최신화 버전
 * window키 + R  ->  cmd 입력 -> nmp-v 입력 -> 숫자 나오면 설치 성공
 
-### 4-2. Create React App 설치 
+### 4-2. Create React App 설치 (cmd창에서 실행)
 #### 1) npm install -g creat-react-app
 * npm install -g : 어디에서든지 실행 
 * ERR 떴을 때 ' sudo npm install -g creat-react-app ' 다시 입력 
@@ -82,21 +82,36 @@
 * 장점: 컴퓨터 공간을 낭비 하지 않음 / 항상 최신버전이 react를 사용할 수 있다.
 * 단점: 매번 새롭게 다운로드 받아야 한다
 
-## 5. create react app을 이용해서 개발환경구축
+## 5. create react app을 이용해서 개발환경구축 (cmd창에서 실행)
 ### window 버전 기준 
 * cd 입력 
 * 디렉토리 드래그 (경로 자동 입력 됨)
 * create-react-app .  입력 
 
-## 6. 샘플 웹앱 실행 
-* terminal 실행  npm run start
-* 실행 되지 않을 때  welcome 페이지에서 open folder로 디렉토리 열기 (해당 디렉토리 단독으로 실행 되어야 함)
+## 6. 샘플 웹앱 실행 (terminal에서 실행) 
+* npm run start
+* 실행 되지 않을 때 VScode welcome 페이지에서 open folder로 디렉토리 열기 (해당 디렉토리 단독으로 실행 되어야 함)
 
 ## 7. JS 코딩하는 법 
-* public > index.html  에서 id=root 안에 컴포넌트가 입력됨
-* src > index.js 에서  <App />안에서 내용이 입력 및 수정 됨
-* document.getElementById( 'root' )  =>  <App /> 파일을 root로 가져감
-* src > App.js  에서  <App /> 내용을 보고, 입력 및 수정 할 수 있음
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+```
+* public 폴더 > index.html  에서 <div id= "root"> </div> 안에 컴포넌트가 입력됨
+* src 폴더 > index.js 에서  <App />안에서 내용이 입력 및 수정 됨
+* document.getElementById( 'root' )  =>  <App /> 파일을 root로 가져간다는 의미 
+* src 폴더 > App.js  에서  <App /> 내용을 보고, 입력 및 수정 할 수 있음
 
 
 * App.js 파일의 입력 방식을 함수방식에서 클라스 방식으로 바꿀 때,  오류 또는 실행이 되지 않는 경우
