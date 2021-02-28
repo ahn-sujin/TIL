@@ -8,6 +8,9 @@
 [3. 컴포넌트 만들기2](#3-컴포넌트-만들기2)
 
 ## 1. 리액트가 없다면 
+* 코드가 길어지면 복잡해짐으로 관리하기가 어렵다.
+
+
 ```html
 <html>
     <body>
@@ -45,9 +48,6 @@
 #### HTML
 
 ###### HTML is Hyper Text Markup Langage.
-
-
-* 코드가 길어지면 복잡해짐으로 관리하기가 어렵다.
 
 
 ## 2. 컴포넌트 만들기1
@@ -110,7 +110,12 @@ class Content extends Component{
 ```
 
 ## 3. 컴포넌트 만들기3
-### 3-1. 최종 결과물 
+### 3-1. 최종 결과물
+
+
+*  동일한 화면을 react컴포넌트 없이 순수 html로 코드를 짰을 때 보다 훨씬 더 간편한 코드를 볼 수 있다.
+
+
 ```javascript
 class App extends Component {
   render() {
@@ -137,10 +142,4 @@ class App extends Component {
 #### HTML
 
 ###### HTML is Hyper Text Markup Langage.
-
-
-*  동일한 화면을 react컴포넌트 없이 순수 html로 코드를 짰을 때 보다 훨씬 더 간편한 코드를 볼 수 있다.
-
-
-
 
