@@ -35,7 +35,6 @@
 
 ```
 
-```
 # WEB
 
 #### world wide web!
@@ -47,7 +46,7 @@
 ## HTML
 
 #### HTML is Hyper Text Markup Langage.
-```
+
 
 * 코드가 길어지면 복잡해짐으로 관리하기가 어렵다. 
 
@@ -126,7 +125,6 @@ class App extends Component {
 }
 ```
 
-```
 # WEB
 
 #### world wide web!
@@ -138,7 +136,8 @@ class App extends Component {
 ## HTML
 
 #### HTML is Hyper Text Markup Langage.
-```
+
+
 *  동일한 화면을 react컴포넌트 없이 순수 html로 코드를 짰을 때 보다 훨씬 더 간편한 코드를 볼 수 있다.
 
 
