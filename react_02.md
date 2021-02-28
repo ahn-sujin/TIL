@@ -1,7 +1,11 @@
 # React에 관하여2
 
 # 목차 
-[1. 리액트가 없다면]
+[1. 리액트가 없다면](#1-리액트가-없다면)
+
+[2. 컴포넌트 만들기1](#2-컴포넌트-만들기1)
+
+[3. 컴포넌트 만들기2](#3-컴포넌트-만들기2)
 
 ## 1. 리액트가 없다면 
 ```html
@@ -28,7 +32,23 @@
 
     </body>
 </html>
+
 ```
+
+```
+# WEB
+
+#### world wide web!
+
+* HTML
+* CSS
+* JAVASCRIPT
+
+## HTML
+
+#### HTML is Hyper Text Markup Langage.
+```
+
 * 코드가 길어지면 복잡해짐으로 관리하기가 어렵다. 
 
 ## 2. 컴포넌트 만들기1
@@ -105,6 +125,21 @@ class App extends Component {
   }
 }
 ```
+
+```
+# WEB
+
+#### world wide web!
+
+* HTML
+* CSS
+* JAVASCRIPT
+
+## HTML
+
+#### HTML is Hyper Text Markup Langage.
+```
+*  동일한 화면을 react컴포넌트 없이 순수 html로 코드를 짰을 때 보다 훨씬 더 간편한 코드를 볼 수 있다.
 
 
 
