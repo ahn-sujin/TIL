@@ -33,8 +33,8 @@
     </body>
 </html>
 
-```
-
+<pre>
+<code>
 # WEB
 
 #### world wide web!
@@ -46,6 +46,9 @@
 ## HTML
 
 #### HTML is Hyper Text Markup Langage.
+</code>
+</pre>
+
 
 
 * 코드가 길어지면 복잡해짐으로 관리하기가 어렵다. 
