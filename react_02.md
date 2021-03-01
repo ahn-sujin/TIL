@@ -153,7 +153,9 @@ class App extends Component {
 ## 4. props
 * 컴포넌트의 속성 값 
 * props를 설정하기 전에는 하나의 태그는 언제나 똑같은 값만 출력됨 
-* porps를 이용하여 입력값에 따라 출력 값이 달라 질 수 있음. 
+* porps를 이용하여 입력값에 따라 출력 값이 달라 질 수 있음.
+* 하나의 태그(subject)에 다른 props값 (title = " " , sub = " ")을 주어서 출력 값을 다르게 할 수 있다.
+* 간단해진 코드 
 * [사용 방법](https://reactjs.org/docs/components-and-props.html)
 
 * 기본 포맷
@@ -218,16 +220,15 @@ class App extends Component {
 
 ###### HTML is Hyper Text Markup Langage.
 
-* 하나의 태그(subject)에 다른 props값 (title = " " , sub = " ")을 주어서 출력 값을 다르게 할 수 있다.
-* 간단해진 코드 
+ 
 
 
-##5. React Develper Tools
+## 5. React Develper Tools
 * 개발자 도구에서 컴포넌트를 볼 수 있음 (리액트 분석 가능) 
 * [설치 사이트](https://reactjs.org/docs/optimizing-performance.html#profiling-components-with-the-devtools-profiler)
 
 
-##6. 컴포넌트 파일로 분리하기
+## 6. 컴포넌트 파일로 분리하기
 * 컴포넌트 폴더 생성 후 파일을 분리하면 관리 및 외부 사용이 편리하다. 
 
 * App.js
