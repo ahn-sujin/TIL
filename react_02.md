@@ -143,3 +143,96 @@ class App extends Component {
 
 ###### HTML is Hyper Text Markup Langage.
 
+
+## 4. props
+* 컴포넌트의 속성 값 
+* props를 설정하기 전에는 하나의 태그는 언제나 똑같은 값만 출력됨 
+* porps를 이용하여 입력값에 따라 출력 값이 달라 질 수 있음. 
+* [사용 방법](https://reactjs.org/docs/components-and-props.html)
+
+* 기본 포맷
+```javascript
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+```
+
+* 적용 예 
+```javascript 
+class Subject extends Component{
+    render(){
+      return(
+        <header>
+              <h1>{this.props.title}</h1>
+              {this.props.sub}
+        </header>
+      );
+    }
+ }
+ 
+ class Content extends Component{
+    render(){
+      return(
+        <article>
+            <h2>{this.props.title}</h2>
+            {this.props.desc}
+        </article>
+      );
+    }
+}
+
+class App extends Component {
+  render() {
+    return (
+
+      <div className="App">
+        <Subject title="web" sub="world wide web!"></Subject>
+        <Subject title="React" sub="For UI"></Subject>
+        <Content title="HTML" desc="HTML is Hyper Text Markup Language."></Content>  
+      </div>
+      
+    );
+  }
+  
+}
+ 
+```
+
+```
+web
+world wide web!
+
+React
+For UI
+
+HTML
+HTML is Hyper Text Markup Language.
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
