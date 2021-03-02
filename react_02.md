@@ -320,6 +320,64 @@ export default TOC;
   
 * export default class명;
 
-  - 위해서 설정한 class를 외부에서 사용할 수 있도록   
+  - 위해서 설정한 class를 외부에서 사용할 수 있도록
+
+## 7. State 소개
+* Props: 사용자가 컴포넌트를 사용하는 입장에서 중요한 것 (사용하는 쪽)
+* State: props값에 따라서 내부의 구현에 필요한 데이터들 (구현하는 쪽)
+
+## 8. State 사용
+```javascript
+class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      Subject:{title:'WEB', sub:'world wide web!'}
+    }
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Subject 
+          title={this.state.Subject.title} 
+          sub={this.state.Subject.sub}>
+        </Subject>
+        <TOC></TOC>
+        <Content title="HTML" desc="HTML is Hyper Text Markup Language."></Content>  
+      </div>
+      
+    );
+  }
+  
+}
+```
+
+* 어떤 컴포넌트가 실행 될 때, render함수 보다 먼저 실행이 되면서 컴포넌트를 초기화시켜 주고 싶은 코드는
+
+  constructor 안에다가 코드를 작성한다.
+  
+  => 컴포넌트가 실행 될 때, constructor함수는 제일 먼저 실행되어서 초기화를 담당한다.
+
+* 리액트에서 props에서 따옴표(" ")로 묶어주면 문자 처리
+* 자바스크립트 코드로 실행 되게 하려면 { } 사용
+* 상위 컴퍼넌트의 상태를 하위 컴퍼넌트로 전달하고 싶을 때, 상위 컴퍼넌트의 state값을 하위 컴퍼넌트의 props값으로 전달 가능! 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
