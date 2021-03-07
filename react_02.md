@@ -17,6 +17,8 @@
 
 [8. State사용](#8-state사용)
 
+[9. key]()
+
 ## 1. 리액트가 없다면 
 * 코드가 길어지면 복잡해짐으로 관리하기가 어렵다.
 
@@ -366,5 +368,81 @@ class App extends Component {
 
 * 리액트에서 props에서 따옴표(" ")로 묶어주면 문자 처리
 * 자바스크립트 코드로 실행 되게 하려면 { } 사용
-* 상위 컴퍼넌트의 상태를 하위 컴퍼넌트로 전달하고 싶을 때, 상위 컴퍼넌트의 state값을 하위 컴퍼넌트의 props값으로 전달 가능! 
+* 상위 컴퍼넌트의 상태를 하위 컴퍼넌트로 전달하고 싶을 때, 상위 컴퍼넌트의 state값을 하위 컴퍼넌트의 props값으로 전달 가능!
+
+
+
+## 9. key
+* property에 여러 값을 줄 경우 
+
+* App.js
+```javascript 
+
+class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      subject:{title:'WEB', sub:'world wide web!'},
+      contents:[
+        {id:1, title:'HTML', desc:'HTML is Hyper Text Markup Language.'},
+        {id:2, title:'CSS', desc:'CSS id for design'},
+        {id:3, title:'JavaScript', desc:'JavaScript id for interactive'}
+      ]
+    }
+  }
+
+  render() {
+    return (
+
+      <div className="App">
+        <Subject 
+          title={this.state.subject.title} 
+          sub={this.state.subject.sub}>
+        </Subject>
+        <TOC data={this.state.contents}></TOC>
+        <Content title="HTML" desc="HTML is Hyper Text Markup Language."></Content>  
+      </div>
+      
+    );
+  }
+  
+}
+
+```
+
+* TOC.js 
+```javascript 
+
+class TOC extends Component{
+    render(){
+      var lists = [];
+      var data = this.props.data;
+      var i = 0;
+      while(i < data.length){
+        lists.push(<li key={data[i].id}><a href={"/content/"+data[i].id}>{data[i].title}</a></li>);
+        i = i + 1;
+      }
+      return(
+        <nav>
+          <ul>
+              {lists}
+          </ul>
+        </nav>
+      );
+    }
+  }
+
+```
+
+
+* TOC안에 있는 데이터들을 App의 내부 state에 TOC에 주입 해주는 것을 통해 자동으로 데이터가 바뀌도록 처리
+* TOC의 부모가 갖고 있는 state를 이용해서 TOC의 내부 데이터가 바뀌도록 처리
+* 주의할 점
+
+  - 여러개의 elements를 자동으로 생성하는 경우, 콘솔 에러가 발생 할 수 있음 
+  - Each child in a list should have a unique "key" prop. 
+  - 이런 경우, lists.push<li>의 key 값을 정해 줘야 함 (리액트에서 요청하는 것) 
+
+
   
