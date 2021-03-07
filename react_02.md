@@ -17,7 +17,7 @@
 
 [8. State사용](#8-state사용)
 
-[9. key]()
+[9. key](#9-key)
 
 ## 1. 리액트가 없다면 
 * 코드가 길어지면 복잡해짐으로 관리하기가 어렵다.
@@ -373,7 +373,8 @@ class App extends Component {
 
 
 ## 9. key
-* property에 여러 값을 줄 경우 
+
+property에 여러 값을 줄 경우 
 
 * App.js
 ```javascript 
@@ -442,7 +443,7 @@ class TOC extends Component{
 
   - 여러개의 elements를 자동으로 생성하는 경우, 콘솔 에러가 발생 할 수 있음 
   - Each child in a list should have a unique "key" prop. 
-  - 이런 경우, lists.push<li>의 key 값을 정해 줘야 함 (리액트에서 요청하는 것) 
+  - 이런 경우, element의 key 값을 정해 줘야 함 (리액트에서 요청하는 것) 
 
 
   
