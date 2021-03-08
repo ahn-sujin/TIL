@@ -172,9 +172,7 @@ return (
 
 ```javascript 
 <h1 a href="/" onClick={function(e){
-   this.setState({
-        mode:'welcome'
-    });
+   this.state.mode = 'welcome';
 }.bind(this)}>
 
 ```
@@ -185,5 +183,14 @@ return (
 * this.state.mode = 'welcome';   =>   this.setState({ mode: 'welcome'; })
 * state의 값이 바뀌면 setState 함수 사용 
 
-* constructor함수에서 변경 할 때, this.state.mode = 'welcome';  사용 가능 
+* constructor함수에서 변경 할 때, this.state.mode = 'welcome';  사용 가능
+
+```javascript 
+<h1 a href="/" onClick={function(e){
+   this.setState({
+        mode:'welcome'
+    });
+}.bind(this)}>
+
+```
 
