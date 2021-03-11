@@ -16,6 +16,9 @@
 [05. 이벤트 setState함수 이해하기](#05-setstate함수-이해하기)
 
 
+[06. 컴포넌트 이벤트 만들기]
+
+
 
 ## 01. 이벤트 state props 그리고 render함수 
 * 역동성 있는 사이트를 만들기 위한 요소 
@@ -191,6 +194,54 @@ return (
         mode:'welcome'
     });
 }.bind(this)}>
+
+```
+
+## 06. 컴포넌트 이벤트 만들기
+* 컴포넌트의 이벤트 생성 onChangePage 
+* 이벤트(onChagePage)안에 실행할 함수 입력
+* 컴포넌트 안에서 링크 클릭했을 때, 이벤트에 설치한 함수를 호출
+
+* App.js  
+```javascript 
+
+return (
+
+      <div className="App">
+        <Subject 
+          title={this.state.subject.title} 
+          sub={this.state.subject.sub}
+          onChangePage = {function(){
+            this.setState({mode:'welcome'});
+          }.bind(this)}
+        >
+        </Subject>
+        
+        <TOC data={this.state.contents}></TOC>
+        <Content title={_title} desc={_desc}></Content>  
+      </div>
+      
+    );
+
+```
+
+* Subject.js
+```javascript
+
+class Subject extends Component{
+    render(){
+      return(
+        <header>
+              <h1><a href="/" onClick={function(e){
+                e.preventDefault();
+                this.props.onChangePage();
+              }.bind(this)}>{this.props.title}</a></h1>
+              {this.props.sub}
+        </header>
+      );
+    }
+  }
+
 
 ```
 
