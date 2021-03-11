@@ -202,7 +202,7 @@ return (
 * 이벤트 'onChagePage' 안에 실행할 함수 입력
 * 컴포넌트 안에서 링크 클릭했을 때, 이벤트에 설치한 함수를 호출
 
-* App.js  
+### 06-1. Subject 이벤트 
 ```javascript 
 
 return (
@@ -225,7 +225,6 @@ return (
 
 ```
 
-* Subject.js
 ```javascript
 
 class Subject extends Component{
@@ -244,4 +243,65 @@ class Subject extends Component{
 
 
 ```
+
+### 06-2. TOC 이벤트
+```javascript 
+return (
+      <div className="App">
+        <Subject 
+          title={this.state.subject.title} 
+          sub={this.state.subject.sub}
+          onChangePage = {function(){
+            this.setState({mode:'welcome'});
+          }.bind(this)}
+        >
+        </Subject>
+        
+        <TOC 
+          onChangePage = {function(){
+            this.setState({mode:'read'});
+          }.bind(this)}
+          data={this.state.contents}
+          ></TOC>
+         
+        <Content title={_title} desc={_desc}></Content>  
+      </div>
+    );
+
+```
+
+```javascript 
+class TOC extends Component{
+    render(){
+      var lists = [];
+      var data = this.props.data;
+      var i = 0;
+      while(i < data.length){
+      
+        lists.push(
+          <li key={data[i].id}>
+            <a 
+              href={"/content/"+data[i].id}
+              onClick={function(e){
+                e.preventDefault();
+                this.props.onChangePage();
+              }.bind(this)}
+            > {data[i].title}</a>
+          </li>
+        );
+        i = i + 1;
+      }
+      
+      return(
+        <nav>
+          <ul>
+              {lists}
+          </ul>
+        </nav>
+      );
+    }
+  }
+  
+```
+
 
