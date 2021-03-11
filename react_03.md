@@ -308,4 +308,81 @@ class TOC extends Component{
   
 ```
 
+### 06-3. TOC 이벤트 실행 
+* App.js
+``` javascript 
+
+return (
+
+      <div className="App">
+        <Subject 
+          title={this.state.subject.title} 
+          sub={this.state.subject.sub}
+          onChangePage = {function(){
+            this.setState({mode:'welcome'});
+          }.bind(this)}
+        >
+        </Subject>
+        
+        <TOC 
+          onChangePage = {function(id){
+            this.setState({
+              mode:'read',
+              selected_content_id:Number(id)
+            });
+          }.bind(this)}
+          data={this.state.contents}
+          ></TOC>
+        <Content title={_title} desc={_desc}></Content>  
+      </div>
+      
+    );
+
+```
+
+
+* TOC.js
+``` javascript 
+
+class TOC extends Component{
+    render(){
+      var lists = [];
+      var data = this.props.data;
+      var i = 0;
+      while(i < data.length){
+        lists.push(
+          <li key={data[i].id}>
+            <a 
+              href={"/content/"+data[i].id}
+              data-id={data[i].id}
+              onClick={function(e){
+                e.preventDefault();
+                this.props.onChangePage(e.target.dataset.id);
+              }.bind(this)}
+            > {data[i].title}</a>
+          </li>
+        );
+        i = i + 1;
+      }
+      return(
+        <nav>
+          <ul>
+              {lists}
+          </ul>
+        </nav>
+      );
+    }
+  }
+
+```
+
+* break;  실행되는 순간 조건문이 끝나고, 조건문 밖에 있는 코드가 실행됨 
+* 'e'이벤트 객체 속성 
+
+  - target : 이벤트가 발생한 태그를 가르킨다
+  - target.dataset : data[i].id의 값을 가져온다.
+  - e.target.dataset.id
+
+* Number() : 문자를 강제로 숫자로 바꿔준다 
+
 
