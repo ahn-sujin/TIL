@@ -273,7 +273,7 @@ return (
     );
 
 ```
-* .js
+* TOC.js
 ```javascript 
 class TOC extends Component{
     render(){
