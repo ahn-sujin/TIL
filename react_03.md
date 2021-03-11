@@ -203,6 +203,8 @@ return (
 * 컴포넌트 안에서 링크 클릭했을 때, 이벤트에 설치한 함수를 호출
 
 ### 06-1. Subject 이벤트 
+
+* App.js
 ```javascript 
 
 return (
@@ -224,7 +226,7 @@ return (
     );
 
 ```
-
+* Subject.js
 ```javascript
 
 class Subject extends Component{
@@ -245,6 +247,8 @@ class Subject extends Component{
 ```
 
 ### 06-2. TOC 이벤트
+
+* App.js
 ```javascript 
 return (
       <div className="App">
@@ -269,7 +273,7 @@ return (
     );
 
 ```
-
+* .js
 ```javascript 
 class TOC extends Component{
     render(){
