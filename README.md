@@ -21,5 +21,4 @@
 
 <br>
 
-#### 📩Contact 
-* asj9674@gmail.com
+#### 📩 Contact asj9674@gmail.com
