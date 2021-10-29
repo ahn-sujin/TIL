@@ -1,6 +1,6 @@
-# React에 관하여2
+# 💡React에 관하여2
 
-# 목차 
+## 📝목차 
 [1. 리액트가 없다면](#1-리액트가-없다면)
 
 [2. 컴포넌트 만들기1](#2-컴포넌트-만들기1)
@@ -18,6 +18,8 @@
 [8. State사용](#8-state사용)
 
 [9. key](#9-key)
+
+<br><br>
 
 ## 1. 리액트가 없다면 
 * 코드가 길어지면 복잡해짐으로 관리하기가 어렵다.
@@ -61,6 +63,7 @@
 
 ###### HTML is Hyper Text Markup Langage.
 
+<br><br>
 
 ## 2. 컴포넌트 만들기1
 ### 2-1. 컴포넌트 만드는 기본 틀 
@@ -121,6 +124,8 @@ class Content extends Component{
 }
 ```
 
+<br><br>
+
 ## 3. 컴포넌트 만들기2
 ### 3-1. 최종 결과물
 
@@ -155,6 +160,8 @@ class App extends Component {
 
 ###### HTML is Hyper Text Markup Langage.
 
+
+<br><br>
 
 ## 4. props
 * 컴포넌트의 속성 값 
@@ -226,13 +233,13 @@ class App extends Component {
 
 ###### HTML is Hyper Text Markup Langage.
 
- 
-
+<br><br>
 
 ## 5. React Develper Tools
 * 개발자 도구에서 컴포넌트를 볼 수 있음 (리액트 분석 가능) 
 * [설치 사이트](https://reactjs.org/docs/optimizing-performance.html#profiling-components-with-the-devtools-profiler)
 
+<br><br>
 
 ## 6. 컴포넌트 파일로 분리하기
 * 컴포넌트 폴더 생성 후 파일을 분리하면 관리 및 외부 사용이 편리하다. 
@@ -328,9 +335,13 @@ export default TOC;
 
   - 위해서 설정한 class를 외부에서 사용할 수 있도록
 
+<br><br>
+
 ## 7. State 소개
 * Props: 사용자가 컴포넌트를 사용하는 입장에서 중요한 것 (사용하는 쪽)
 * State: props값에 따라서 내부의 구현에 필요한 데이터들 (구현하는 쪽)
+
+<br><br>
 
 ## 8. State 사용
 ```javascript
@@ -370,7 +381,7 @@ class App extends Component {
 * 자바스크립트 코드로 실행 되게 하려면 { } 사용
 * 상위 컴퍼넌트의 상태를 하위 컴퍼넌트로 전달하고 싶을 때, 상위 컴퍼넌트의 state값을 하위 컴퍼넌트의 props값으로 전달 가능!
 
-
+<br><br>
 
 ## 9. key
 
