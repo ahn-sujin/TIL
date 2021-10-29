@@ -1,6 +1,6 @@
-# React에 관하여 
+# 💡React 소개 및 개발 환경 설정 
 
-# 목차 
+## 📝목차 
 [1. 수업소개](#1-수업소개)
 
 
@@ -28,7 +28,7 @@
 [9. 배포하는 법](#9-배포하는-법)
 
 
-
+<br><br>
 
 ## 1. 수업소개 
 ### 1-1. 리액트 란? 
@@ -40,15 +40,17 @@
 * 재사용 가능
 * 유지보수 편리 
 
+<br><br>
 
 ## 2. 공부 전략 
 * 코딩 (coding) 
 * 실행 (Run)
 * 디플로이 (deploy) : 소비자에게 전달 
 
+<br><br>
 
 ## 3. 개발환경 종류
-* tip: 공식 문서에 익숙해 질 것! 
+☝ tip: 공식 문서에 익숙해 질 것! 
 
   [React설치 사이트 이동](https://reactjs.org/) 
 
@@ -60,6 +62,7 @@
 * Toolchain : 리액트로 앱을 개발 할 때, 목표를 달성하기 위해서 필요한 개발 환경 및 도구를 제공
 * npm : node.js 를 이용해서 만들어진 앱을 명령어 환경에서 손쉽게 설치 할 수 있도록 도와주는 도구 ( node.js 계의 앱스토어, 구글 플레이어 역할을 하는 소프트 웨어) 
 
+<br><br>
 
 ## 4. npm을 이용해서 Create React App 설치
 
@@ -82,15 +85,21 @@
 * 장점: 컴퓨터 공간을 낭비 하지 않음 / 항상 최신버전이 react를 사용할 수 있다.
 * 단점: 매번 새롭게 다운로드 받아야 한다
 
+<br><br>
+
 ## 5. create react app을 이용해서 개발환경구축 (cmd창에서 실행)
 ### window 버전 기준 
 * cd 입력 
 * 디렉토리 드래그 (경로 자동 입력 됨)
 * create-react-app .  입력 
 
+<br><br>
+
 ## 6. 샘플 웹앱 실행 (terminal에서 실행) 
 * npm run start
 * 실행 되지 않을 때 VScode welcome 페이지에서 open folder로 디렉토리 열기 (해당 디렉토리 단독으로 실행 되어야 함)
+
+<br><br>
 
 ## 7. JS 코딩하는 법 
 ### index.js 
@@ -137,10 +146,14 @@ class App extends Component {
 
   => '첫 줄'에 import React, { Component } from 'react'; 또 함께 입력 되었는지 확인!
 
+<br><br>
+
 ## 8. CSS 코딩하는 법 
 * index.css 
 * App.css : App.js 안에 있는 리액트의 컴퍼넌트가 로드 됐을 때, 실행되는 디자인 파일
 * 사용자 정의 컴퍼넌트 App의 이름은 수정 가능 (이름이 같아야함)  but 파일의 이름은 수정되면 안됨.
+
+<br><br>
 
 ## 9. 배포하는 법 
 * build 할 때 : terminal에서 npm run build 입력 --> build 폴더 생성 
