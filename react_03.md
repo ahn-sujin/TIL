@@ -75,7 +75,7 @@ class App extends Component {
 
 * props 또는 state의 값이 바뀌면, 해당되는 컴포넌트의 render함수가 다시 호출된다
 
-  => 화면이 다시 그려진다
+   화면이 다시 그려진다
   
 * render 함수: 어떤 html을 그릴 것인지 결정하는 역할 
 
