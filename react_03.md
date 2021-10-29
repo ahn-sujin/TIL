@@ -1,6 +1,6 @@
-# React에 관하여3 
+# 💡React 이벤트 생성 
 
-# 목차 
+## 📝목차 
 [01. 이벤트 state props 그리고 render함수](#01-이벤트-state-props-그리고-render함수)
 
 
@@ -18,7 +18,7 @@
 
 [06. 컴포넌트 이벤트 만들기](#06-컴포넌트-이벤트-)
 
-
+<br><br>
 
 ## 01. 이벤트 state props 그리고 render함수 
 * 역동성 있는 사이트를 만들기 위한 요소 
@@ -80,6 +80,8 @@ class App extends Component {
 * render 함수: 어떤 html을 그릴 것인지 결정하는 역할 
 
 
+<br><br>
+
 ## 02. 이벤트 설치 
 * 버튼(web)을 클릭했을 때, 해당 값 호출 
 * onclick : 순수 자바스크립트 코드 / onClick : 리액트 코드 
@@ -133,6 +135,8 @@ class App extends Component {
 
 ```
 
+<br><br>
+
 ## 03. 이벤트에서 state변경하기 
 
 ### 03-1) bind 함수 
@@ -168,6 +172,8 @@ return (
 
 ```
 
+<br><br>
+
 ## 04. 이벤트 bind함수 이해하기 
 * render함수 안에서 this는 컴포넌트 자신을 가르킨다. 
 * 하지만, render함수 안에 있는 함수에 this를 호출했을 때, this값이 아무것도 없이 호출되는 경우가 발생한다.
@@ -179,6 +185,8 @@ return (
 }.bind(this)}>
 
 ```
+
+<br><br>
 
 ## 05. 이벤트 setState함수 이해하기 
 * 컴포넌트 생성 후 , 동적으로 state 값을 변경 할 때,  this.state.mode = 'welcome';  사용 불가
@@ -196,6 +204,8 @@ return (
 }.bind(this)}>
 
 ```
+
+<br><br>
 
 ## 06. 컴포넌트 이벤트 만들기
 * 컴포넌트의 이벤트 생성 onChangePage 
