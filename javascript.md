@@ -123,7 +123,7 @@
 
   : document.body.style.backgroundColor="red";
       
-<br>
+<br><br>
 
 ## 4. 프로그램, 프로그래, 프로그래머 
 * HTML: 프로그래밍 언어(X), 시간에 순서에 구애 받지 않는다 
@@ -132,12 +132,12 @@
 * 프로그래밍 : 순서를 만드는 행위 -> 반복적인 일을 하지 않아도 됨
 * 프로그래머: 순서를 만드는 사람 
 
-<br>
+<br><br>
 
 ## 5. 조건문 
 * 조건문: 조건에 따라 다른 순서의 기능들이 실행 되도록 함 -> 복잡한 일을 해결
 
-<br>
+<br><br>
 
 ## 6. 비교 연산자와 블리언 
 ### 6-1. === (비교 연산자)
@@ -146,7 +146,7 @@
 ### 6-2. true / false (블리언) 
    html '<'  은  '&lt;' 로 표현한다 
 
-<br>
+<br><br>
 
 ## 7. 조건문 
 ```javascript
@@ -165,7 +165,7 @@ document.write("4");
 * if 절의 값이 false 일 때, if 조건문(A) 이 생략 된다. 
 
 
-<br>
+<br><br>
 
 ## 8. 조건문의 활용 
 * javascript element get value
@@ -174,7 +174,7 @@ document.write("4");
   : document.querySelector('selector' ).value;
 
 
-<br>
+<br><br>
 
 ## 9. 리팩토링 중복의 제거 
 * 리팩토링: 비효울적인 코드를 효율적으로 만들어 가독성을 높이고 유지보수가 쉽도록 코드를 개선 
@@ -224,7 +224,7 @@ document.write("4");
     }
 ```
 
-<br>
+<br><br>
 
 
 ## 10. 배열(Array)
@@ -243,7 +243,7 @@ document.write("4");
   : var fruits = ["Banana" , "Orange" , "Apple", "Mango"]; fruits.push("Kiwi");
 
 
-<br>
+<br><br>
 
 ## 11. 반복문(Loop)
 * 반복문: 순서대로 흐르는 순서문의 흐름을 제어 
@@ -255,7 +255,7 @@ document.write("4");
 *  var i  = 0; : 실행 코드가 몇번 실행 됐는지 적는 코드  
 
 
-<br>
+<br><br>
 
 ## 12. 배열과 반복문의 활용 
 * querySelector  : 찾으려고 하는 태그의 첫 번째만 찾아오는 속성이 있음( 해당하는 모든 태그를 가져오려고 할때 사용하기에는 부적절함) 
@@ -264,7 +264,7 @@ document.write("4");
   : document.querySeletorAll( );
  
  
- <br>
+<br><br>
  
 ## 13. 함수 (function)
 * 연속적인 반복이 아니라면 반복문을 사용할 수 없다. 함수를 이용 ! 
@@ -272,7 +272,7 @@ document.write("4");
 * 실행 코드 : name ( ) ;
 
 
-<br>
+<br><br>
 
 ## 14. 함수 : 매개변수와 인자 
 * 자판기 음료 선택 : 입력 
@@ -292,7 +292,7 @@ document.write("4");
 * 매개변수와 인자는 함수에 들어오는 입력값! 
 
 
-<br>
+<br><br>
 
 ## 15. 객체 
 * 함수와 연관
@@ -319,7 +319,7 @@ document.write("4");
   
   객체에 속해있는 함수는 '메소드'라고 불린다. 
   
- <br> 
+ <br><br>
   
   
 ## 16. 객체 쓰기와 읽기 
@@ -330,7 +330,7 @@ document.write("4");
   ex) coworkers.data scientist (X) ---> coworkers["data scientist"] (O)
 
 
-<br>
+<br><br>
 
 ## 17. 객체와 반복문
 * javascript object iterate (객체 반복문) 
@@ -342,7 +342,7 @@ document.write("4");
   => exo(객체)에 있는 key값(leader , main dancer, vocal, main vocal, sub vocal....) 하나하나를 변수 값으로 세팅 해준다. 
 
 
-<br>
+<br><br>
 
 ## 18. 객체프로퍼티와 메소드 
 * coworkers.showAll = function( ){ } 
@@ -356,20 +356,20 @@ document.write("4");
 * 갹체의 이름 바꼈을 때, 데이터를 못가져 올 수 있음 
 * 따라서 함수 안에서 함수가 소솓되어 있는 객체를 가르키는 약속된 기호 사용 (= this)
 
-<br>
+<br><br>
 
 
 ## 19. 객체의 활용 
 * 객체의 프로퍼티와 프로퍼티를 구분 할 때 콤마(,)를 입력한다. 
 
-<br>
+<br><br>
 
 
 ## 20. 파일로 쪼개서 정리 정돈하기 
 * cache(캐시): 저장
 
 
-<br>
+<br><br>
 
 ## 21. 라이브러리와 프레임워크 
 * 다른 사람의 도움을 받아 소프트웨어를 만든다.
@@ -389,7 +389,7 @@ document.write("4");
 * 어떤 라이브러리가 생성되어 있는지 파악하는 것이 중요 
 
 
-<br>
+<br><br>
 
 ## 22. UI  vs API
 ### 22-1.  User Interface (UI)
@@ -403,7 +403,7 @@ document.write("4");
 * API와 순서는 깊은 관련 
 
 
-<br>
+<br><br>
 
 ## 23. 마무리 
 * 태그를 삭제 또는 자식 태그를 추가하고 싶을 때 (웹페이지 제어)
@@ -420,7 +420,7 @@ document.write("4");
 * webVR  (가상현실)
 
 
-<br>
+<br><br>
 
 ## Contact
 :envelope: asj9674@gmail.com
