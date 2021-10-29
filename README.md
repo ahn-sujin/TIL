@@ -4,17 +4,17 @@
     
 <br>    
 
-## Markdown
+## ✅Markdown
   * **[마크다운 사용법 정리](./markdown.md)** 
  
 <br>
 
-## Javascript
+## ✅Javascript
   * **[javascript에 대한 기초 지식 및 이론 정리](./javascript.md)** 
 
 <br>
 
-## React
+## ✅React
  * **[React 소개 및 개발 환경 설정](./react.md)**
  * **[React Component 사용](./react_02.md)**
  * **[React 이벤트 생성](./react_03.md)**
