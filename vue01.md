@@ -268,13 +268,37 @@ this.$emit('이벤트명');
 ### 03-5. 관계 없는 컴포넌트 간 통신  - 이벤트 버스	      
 ![image](img/vue07.PNG)	      
 
-* **이벤트 버스(Event Bus)**는 개발자가 지정한 2개의 컴포넌트 간에 데이터를 주고받을 수 있는 방법이다.					      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
+* **이벤트 버스(Event Bus)** 는 개발자가 지정한 2개의 컴포넌트 간에 데이터를 주고받을 수 있는 방법이다.					      
 
+```html
+<div id="app">
+    <child-component></child-component>
+</div>
+
+<script>
+    var eventBus = new Vue(); // 이벤트 버스를 위한 추가 인스턴스 1개 생성
+    Vue.component('child-component', {
+        template:'<div>하위 컴포넌트 영역입니다.<button v-on:click="showLog">show</button></div>',
+        methods: {
+            showLog: function(){
+                eventBus.$emit('triggerEventBus', 100); // 이벤트를 보내는 컴포넌트
+            }
+        }
+    });
+    var app = new Vue({
+        el: '#app', 
+        created: function(){
+            eventBus.$on('triggerEventBus', function(value){ // 이벤트를 받는 컴포넌트
+                console.log("이벤트를 전달 받음. 전달 받은 값:" , value);
+            });
+        }
+    });
+</script					      					            
+```	         
+![image](img/vue08.PNG)	      
+	      
+	      
 <br><br>
+						  
+						  
+####출처 do it vue.js						  
