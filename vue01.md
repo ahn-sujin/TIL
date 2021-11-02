@@ -43,6 +43,7 @@ new Vue({
 });
 
 ```
+	
 ```html
   <div id="app"></div>
   {{ message }}
@@ -154,20 +155,72 @@ new Vue({
 ## 03. 뷰 컴포넌트 통신 
 ### 03-1. 상하위 컴포넌트 관계
 * 컴포넌트는 각각 고유한 유효 범위를 갖고 있기 때문에 직접 다른 컴포넌트의 값을 참조할 수 없다. 따라서 뷰 프레임워크 자체에서 정의한 컴포넌트 데이터 전달 방법을 따라야 한다. 
-* 가장 기본적인 데이터 전달 방법은 상위(부모)-하위(자식)컴포넌트 간의 데이터 전달 방법이다.
+* 가장 기본적인 데이터 전달 방법은 **상위(부모)-하위(자식)**컴포넌트 간의 데이터 전달 방법이다.
+![image](img/vue03.PNG)
+	      
+### 03-2. 상위에서 하위 컴포넌트로 데이터 전달하기	      
+* props는 상위 컴포넌트에서 하위 컴포넌트로 데이터를 전달할 때 사용하는 속성
+```javascript
+Vue.component('child-component', {
+	porps:['props 속성 이름'],
+});      
+```
+```html
+<child-component v-bind:props 속성 이름 = "상위 컴포넌트의 data 속성"></child-component> 	      
+```
+							
+#### ☝ v-bind 란??
+* 아이디, 클래스, 스타일 등의 HTML속성 값에 뷰 데이터 값을 연결 
+```html
+<p v-bind:id = "idA">아이디 바인딩</p>
+<p v-bind:class = "classA">클래스 바인딩</p>
+<p v-bind:style = "styleA">스타일 바인딩</p>
+<script>
+	new Vue({
+		el: '#app',
+		data: {
+		   idA: 10,
+		   classA: 'container',
+		   styleA: 'color:blue'
+		}	
+	});
+</script> 
+```							
+* 'v-bind:' 문법을 ':'로 간소화 할 수 있다.
+			  
+```html
+   <div id="app">
+        <child-component v-bind:propsdata ="message"></child-component>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        Vue.component('child-component',{
+            props : ['propsdata'],
+            template:'<p>{{propsdata}}</p>',
+        });
+
+        new Vue({
+            el: '#app',
+
+            data:{
+                message: 'Hello Vue!'
+            }
+        });
+    </script>
+```
+							      
+			
+	           
+### 03-3. 하위에서 상위 컴포넌트로 이벤트 전달하기	      
 	      
 	      
 	      
+### 03-4. 같은 레벨의 컴포넌트 간 통신
 	      
 	      
 	      
-	      
-	      
-	      
-	      
-	      
-	      
-	      
+### 03-5. 관계 없는 컴포넌트 간 통신  - 이벤트 버스	      
 	      
 	      
 	      
