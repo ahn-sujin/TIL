@@ -37,8 +37,8 @@ new Vue({
 
 new Vue({
 	el : '#app',
-  data :  {
-    message : 'Hello Vue.js!'
+  	data :  {
+    	message : 'Hello Vue.js!'
   }
 });
 
@@ -83,9 +83,67 @@ new Vue({
 
 ## 02. 뷰 컴포넌트
 ### 02-1. 컴포넌트 란?
+* 조합하여 화면을 구성할 수 있는 블록
 
 ### 02-2. 컴포넌트 등록하기
+* **전역 컴포넌트** 
+```javascript
+Vue.component('컴포넌트 이름', {
+	// 컴포넌트 내용
+});
+```
+	
+* **지역 컴포넌트** : 인스턴스 component 속성을 추가하고 등록할 컴포넌트 이름과 내용을 정의
+```javascript
+new Vue({
+	components: {
+		'컴포넌트 이름' :  컴포넌트 내용
+	}	
+});
+```
+```html
+<div id="app>
+        <h3>첫 번째 인스턴스 영역</h3>
+        <button>컴포넌트 등록</button>
+        <!-- 전역 컴포넌트 표시 -->
+        <my-component></my-component> 
+        <!-- 지역 컴포넌트 표시 -->
+        <my-local-component></my-local-component> 
+</div>
+ <hr>
+<div id="app2">
+    <h3>두번째 인스턴스 영역</h3>
+    <button>컴포넌트 등록</button>
+    <!-- 전역 컴포넌트 표시 -->
+    <my-component></my-component> 
+    <!-- 지역 컴포넌트 표시 -->
+    <my-local-component></my-local-component> 
+</div>
 
+<script>
+    //전역 컴포넌트 등록
+    Vue.component('my-component' ,{
+        template: '<div>전역 컴포넌트가 등록되었습니다!</div>'
+    });
+
+    //지역 컴포넌트 등록
+    var cmp = {
+        template:'<div>지역 컴포넌트가 등록되었습니다!</div>' //컴포넌트 내용
+    };
+
+    new Vue({
+        el:'#app',
+        components:{ // 지역 컴포넌트 등록
+            'my-local-component': cmp
+        }
+    });
+    new Vue({
+        el:'#app2' 
+    });
+</script>	
+
+```
+	
 ### 02-3. 지역 컴포넌트와 전역 컴포넌트의 차이 
 
 <br><br>
