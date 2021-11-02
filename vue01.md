@@ -222,16 +222,53 @@ this.$emit('이벤트명');
 ```
 ```html							      
 // 이벤트 수신
-<child-component v-om:이벤트명 = "상위 컴포넌트의 메서드명"></child-component>							      
+<child-component v-on:이벤트명 = "상위 컴포넌트의 메서드명"></child-component>							      
 ```							      
-							      
+* $emit()을 호출하면 괄호 안에 정의된 이벤트가 발생한다. 
+* $emit()을 호출하는 위치는 하위 컴포넌트의 특정 매서드 내부이다. 따라서 $emit()을 호출할 때 사용하는 this는 하위 컴포넌트를 가리킨다.
+* 호출한 이벤트는 하위 컴포넌트를 등록하는 태그에서 v:on으로 받는다.
+* 하위 컴포넌트에서 발생한 이벤트명을  v-on: 속성에 지정하고, 속성의 값에 이벤트가 발생했을 때 호출될 상위 컴포넌트의 매서드를 지정한다.
+					    
+```html
+<div id="app">
+    <child-component v-on:show-log ="printText"></child-component>
+</div>
+
+<script>
+    Vue.component('child-component',{
+        template:'<button v-on:click="showLog">show</button>',
+        methods:{
+            showLog : function(){
+                this.$emit('show-log');
+            }
+        }
+    });
+
+    new Vue({
+        el: '#app',
+
+        methods: {
+            printText: function(){
+                alert('receive an event');
+            }
+        }
+    });
+</script>					    					   				    
+```
+![image](img/vue05.PNG)
+					      
+					    
 ### 03-4. 같은 레벨의 컴포넌트 간 통신
-	      
-	      
+![image](img/vue06.PNG)	
+					      
+* 뷰는 상위에서 하위로만 데이터를 전달해야 하는 기본적인 통신 규칙을 따르기 때문에 바로 옆 컴포넌트에 값을 전달하려면 하위에서 공통 상위 컴포넌트로 이벤트를 전달 후 공통 상위 컴포넌트에서 2개의 하위 컴포넌트에 props를 내려 보내야한다
+* 이런 방식으로 통신해야하는 이유는 컴포넌트 고유의 **유효범위** 때문이다					      
+* 이런 통신 구조는 상위 컴포넌트가 필요 없음에도 불구하고 같은 레벨 간에 통신하기 위해 강제로 상위 컴포넌트를 두어야 하기 때문에 이를 해결하기 위한 방법으로 **이벤트 버스**가 있다. 	      
 	      
 ### 03-5. 관계 없는 컴포넌트 간 통신  - 이벤트 버스	      
-	      
-	      
+![image](img/vue07.PNG)	      
+
+* **이벤트 버스(Event Bus)**는 개발자가 지정한 2개의 컴포넌트 간에 데이터를 주고받을 수 있는 방법이다.					      
 	      
 	      
 	      
