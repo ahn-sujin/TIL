@@ -222,9 +222,42 @@ this.$emit('이벤트명');
 ```
 ```html							      
 // 이벤트 수신
-<child-component v-om:이벤트명 = "상위 컴포넌트의 메서드명"></child-component>							      
+<child-component v-on:이벤트명 = "상위 컴포넌트의 메서드명"></child-component>							      
 ```							      
-							      
+* $emit()을 호출하면 괄호 안에 정의된 이벤트가 발생한다. 
+* $emit()을 호출하는 위치는 하위 컴포넌트의 특정 매서드 내부이다. 따라서 $emit()을 호출할 때 사용하는 this는 하위 컴포넌트를 가리킨다.
+* 호출한 이벤트는 하위 컴포넌트를 등록하는 태그에서 v:on으로 받는다.
+* 하위 컴포넌트에서 발생한 이벤트명을  v-on: 속성에 지정하고, 속성의 값에 이벤트가 발생했을 때 호출될 상위 컴포넌트의 매서드를 지정한다.
+					    
+```html
+<div id="app">
+    <child-component v-on:show-log ="printText"></child-component>
+</div>
+
+<script>
+    Vue.component('child-component',{
+        template:'<button v-on:click="showLog">show</button>',
+        methods:{
+            showLog : function(){
+                this.$emit('show-log');
+            }
+        }
+    });
+
+    new Vue({
+        el: '#app',
+
+        methods: {
+            printText: function(){
+                alert('receive an event');
+            }
+        }
+    });
+</script>					    					   				    
+```
+![image](img/vue05.PNG)
+					      
+					    
 ### 03-4. 같은 레벨의 컴포넌트 간 통신
 	      
 	      
