@@ -101,10 +101,11 @@ new Vue({
 	}	
 });
 ```
+	
+### 02-3. 지역 컴포넌트와 전역 컴포넌트의 차이 
 ```html
 <div id="app>
         <h3>첫 번째 인스턴스 영역</h3>
-        <button>컴포넌트 등록</button>
         <!-- 전역 컴포넌트 표시 -->
         <my-component></my-component> 
         <!-- 지역 컴포넌트 표시 -->
@@ -113,7 +114,6 @@ new Vue({
  <hr>
 <div id="app2">
     <h3>두번째 인스턴스 영역</h3>
-    <button>컴포넌트 등록</button>
     <!-- 전역 컴포넌트 표시 -->
     <my-component></my-component> 
     <!-- 지역 컴포넌트 표시 -->
@@ -142,9 +142,8 @@ new Vue({
     });
 </script>	
 
-```
+```	
 	
-### 02-3. 지역 컴포넌트와 전역 컴포넌트의 차이 
 
 <br><br>
 
