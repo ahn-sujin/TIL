@@ -58,8 +58,7 @@
     }).$mount('#app');
 </script>  
 ```
-[image](/img/router01.PNG) 
-[image](/img/router02.PNG)
+![image](img/router01.PNG)   ![image](img/router02.PNG)
   
 ✋ **$mount( )**  
 ```
