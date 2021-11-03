@@ -17,8 +17,8 @@
 ### 01-2. 뷰 라우터
 * 뷰에서 라우팅 기능을 구현할 수 있도록 지원하는 공식 라이브러리
 * 뷰로 만든 페이지 간에 자유롭게 이동할 수 있다.
-* **<router-link to = "URL값">** : 페이지 이동 태그/ 화면에서는<a>로 표시되며 클릭하면 to에 지정한 URL로 이동
-* **<router-view>** : 페이지 표시 태그/ 변경되는 URL에 따라 해당 컴포넌트를 뿌려주는 영역
+* <router-link to = "URL값"> : 페이지 이동 태그/ 화면에서는<a>로 표시되며 클릭하면 to에 지정한 URL로 이동
+* <router-view> : 페이지 표시 태그/ 변경되는 URL에 따라 해당 컴포넌트를 뿌려주는 영역
 ```html
 <div id="app">
     <h1></h1> 
@@ -58,7 +58,8 @@
     }).$mount('#app');
 </script>  
 ```
-[image](img/router01.PNG) [image](img/router02.PNG)
+[image](/img/router01.PNG) 
+[image](/img/router02.PNG)
   
 ✋ **$mount( )**  
 ```
