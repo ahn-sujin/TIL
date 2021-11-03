@@ -10,19 +10,19 @@
 <br>
 
 ## ✅Javascript
-  * **[javascript에 대한 기초 지식 및 이론 정리](./javascript.md)** 
+  * **[javascript에 대한 기초 지식 및 이론 정리](./javascript/javascript.md)** 
 
 <br>
 
 ## ✅React
- * **[React 소개 및 개발 환경 설정](./react.md)**
- * **[React Component 사용](./react_02.md)**
- * **[React 이벤트 생성](./react_03.md)**
+ * **[React 소개 및 개발 환경 설정](./react/react.md)**
+ * **[React Component 사용](./react/react_02.md)**
+ * **[React 이벤트 생성](./react/react_03.md)**
 
 <br>
 
 ## ✅vue
- * **[인스턴스 & 컴포넌트](./vue01.md)**
+ * **[인스턴스 & 컴포넌트](./vue/vue01.md)**
 
 <br>
 
