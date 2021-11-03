@@ -192,14 +192,58 @@
 * 뷰 라이브러리 : 뷰 리소스, 액시오스(axios)
   
 ### 02-2. 뷰 리소스
+```html
+<div id="app">
+    <button v-on:click="getData">프레임워크 목록 가져오기</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- 뷰 리소스 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script>
+<script>
+    new Vue({
+        el:'#app',
+        methods: {
+            getData: function() {
+                this.$http.get(`https://raw.githubusercontent.com/joshua1988/doit-vuejs/master/data/demo.json`)
+                .then(function(response){
+                    console.log(response);
+                    console.log(JSON.parse(response.data)); // 객체 전환
+                });
+            }
+        }
+    });
+</script>	
+```
+[결과물 보기](http://frontend-asj.coding.onlinepowers.com/vue/http/index01.html)	
 	
-
+	
 ### 02-3. 액시오스
+```html
+<div id="app">
+    <button v-on:click="getData">프레임워크 목록 가져오기</button>
+</div>
 
-
-
-
-
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- 뷰 리소스 CDN -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.3.4"></script> -->
+<!-- 액시오스 라이브러리 로딩 -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        methods: {
+            getData: function() {
+                axios.get(`https://raw.githubusercontent.com/joshua1988/doit-vuejs/master/data/demo.json`)
+                .then(function(response){
+                    console.log(response);
+                });
+            }
+        }
+    });
+</script>		
+```
+[결과물 보기](http://frontend-asj.coding.onlinepowers.com/vue/http/index02.html)
 	      
 <br><br>
 						  
