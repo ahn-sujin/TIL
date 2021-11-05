@@ -1,4 +1,4 @@
-# 💡라우터 & HTTP통신
+# 💡뷰 템플릿 & 뷰 프로젝트 구성 방법
 
 ## 📝목차 
 [01. 뷰 템플릿](#01-뷰-템플릿)
@@ -16,8 +16,31 @@
 * template 속성을 사용하지 않는 경우 
 ```html
 <div id="app>
-         <h3>{{}}</h3> 
+         <h3>{{message}}}}</h3> 
 </div>
+<script>
+	 new Vue({
+	 	el:'#app', 
+	 	data:{
+	 		message: 'Hello Vue.js!'
+	 	}
+	 });
+</script> 
+```
+
+* template 속성을 사용한 경우
+```html
+<div id="app"></div>
+
+<script>
+	new Vue({
+		el:'#app',
+		data: {
+		  message: 'Hello Vue.js!'	
+		},
+		template: '<h3>{{ message }}</h3>'
+	});
+</script>
 ```
 
 
