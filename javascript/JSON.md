@@ -24,8 +24,10 @@ console.log(strToObj);
 console.log(objToStr);
 ```
 
-## 결과
+### 결과
 ```javascript
-{name: 'student', age: '25', address: '서울'}  // 문자열 -> 객체
-{"name":"student","age":"25","address":"서울"} // 객체 -> 문자열
+// console.log(strToObj)
+{name: 'student', age: '25', address: '서울'}  
+// console.log(objToStr)
+{"name":"student","age":"25","address":"서울"} 
 ```
