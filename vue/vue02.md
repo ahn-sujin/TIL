@@ -244,6 +244,8 @@
     });
 </script>		
 ```
+* response객체를 확인해 보면 data 속성이 일반 문자열 형식이 아니라 객체 형태이기 떄문에 별도로 JSON.parse()를 사용하여 객체로 변환할 필요가 없다.	
+	
 [결과물 보기](http://frontend-asj.coding.onlinepowers.com/vue/http/index02.html)
 	      
 <br><br>
