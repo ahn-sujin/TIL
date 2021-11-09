@@ -11,6 +11,7 @@
 
 ## ✅Javascript
   * **[javascript에 대한 기초 지식 및 이론 정리](./javascript/javascript.md)** 
+  * **[JSON.parse / JSON.stringify](./javascript/JSON.md)** 
 
 <br>
 
@@ -24,7 +25,7 @@
 ## ✅vue
  * **[인스턴스 & 컴포넌트](./vue/vue01.md)**
  * **[라우터 & HTTP통신](./vue/vue02.md)**
- * **[템플릿 & 프로젝트 구성](./vue/vue03.md)**
+
 
 <br>
 
