@@ -112,7 +112,7 @@
     });
 </script>
 ```
-[image]()
+![image](img/tamplate01.PNG)
 
 <br>
 
@@ -225,7 +225,7 @@
 </script>
 
 ```
-
+![image](img/tamplate02.PNG)
 
 <br>
 
@@ -275,7 +275,7 @@
     });
 </script>
 ```
-(결과 이미지)(결과이미지)
+![image](img/template03.PNG)  ![image](img/template04.PNG)
 
 
 * **watch속성** 
@@ -306,7 +306,7 @@
 </script>
 ```
 
-(결과이미지)
+![image](img/template05.PNG)
 
 
 
