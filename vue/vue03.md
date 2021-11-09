@@ -1,10 +1,7 @@
-# 💡뷰 템플릿 & 뷰 프로젝트 구성 방법
+# 💡뷰 템플릿
 
 ## 📝목차 
 [01. 뷰 템플릿](#01-뷰-템플릿)
-
-
-[02. 뷰 프로젝트 구성 방법](#02-뷰-프로젝트-구성-방법)
 
 
 <br><br>
@@ -193,6 +190,41 @@
     </table>
 </figure>
 
+<br>
+
+```html
+<div id="app">
+    <a v-if="flag">두잇 vue</a>
+    <ul>
+        <li v-for="system in systems">{{ system }}</li>
+        <!-- v-for = "아이템명 in array" -->
+    </ul>
+    <p v-show="flag">두잇 vue</p>
+    <h5 v-bind:id = "uid">뷰 입문서</h5>
+    <!-- v-bind:속성 = "속성이름" -->
+    <button v-on:click = "popupAlert">경고 창 버튼</button>
+    <!-- v-on:이벤트이름 = "메소드이름" -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({ 
+        el:'#app',
+        data: {
+            flag:true,
+            systems : ['andoroid', 'ios', 'window'],
+            uid: 10
+        },
+        methods : {
+            popupAlert : function() {
+                return alert('경고 창 표시');
+            }
+        }
+    });
+</script>
+
+```
+
 
 <br>
 
@@ -201,19 +233,9 @@
 
 
 
+<br>
 
-
-
-<br><br>
-
-## 02. 뷰 프로젝트 구성 방법
-
-
-
-
-
-
-
+### 01-6. 고급 템플릿 기법
 
 
 
