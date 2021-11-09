@@ -28,6 +28,8 @@
 </script> 
 ```
 
+<br>
+
 > template 속성을 **사용한** 경우
 ```html
 <div id="app"></div>
