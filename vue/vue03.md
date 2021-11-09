@@ -237,10 +237,50 @@
 <br>
 
 ### 01-6. 고급 템플릿 기법
+* **computed 속성**
+  + 복잡한 데이터 연산들을 정의하는 영역이다.
 
 
+* **computed 속성의 장점**
+  + data속성 값의 변화에 따라 자동으로 다시 연산한다.
+  + 캐싱 :  동일한 연신을 반복해서 하지 않기 위해 연산의 결과 값을 미리 저장하고 있다가 필요할 때 불러오는 동작
 
+* **computed 속성과 methods 속성의 차이점**
+  + **methods** 속성은 호출할 때만 해당 로직이 수행되고, **computed** 속성은 대상 데이터의 값이 변경되며 자동적으로 수행된다.
+  +  methods: 수동적 데이터 갱신 /  computed: 능동적 데이터 갱신
 
+```html
+<div id="app">
+    <p>{{ message }}</p>
+    <button v-on:click="reverseMsg">문자열 역순</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({ 
+        el:'#app',
+        data: {
+            message:'Hello Vue!'
+        },
+        // methods 속성
+        methods: {
+            reverseMsg: function(){
+                this.message =  this.message.split('').reverse().join('');
+                return this.message;
+            }
+        }
+    });
+</script>
+```
+(결과 이미지)(결과이미지)
+
+* methods 속성은 수행할 때마다 연산을 하기 때문에 별도로 캐싱을 하지 않지만, computed 속성은 데이터가 변경되지 않는 한 이전의 계산 값을 가지고 있다가 필요할 때 바로 반환해 준다. 
+* 복잡한 연산을 반복해서 수행해 화면에 나타내야한다면, computed 속성을 이용하는 것이 효율적이다.
+ 
+
+* **watch속성** 
+  + 데이터 변화를 감지하여 자동으로 특정 로직을 수행한다.
+  + computed 속성과 유사하지만, watch 속성은 데이터 호출과 같이 시간이 상대적으로 더 많이 소모되는 비동기 처리에 적합하다.
 
 
 
