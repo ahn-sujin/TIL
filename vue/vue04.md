@@ -136,16 +136,16 @@
 	
 ![image](img/project02.PNG)	
 
-* npm install 명령어 입력 결과 화면
+* ``` npm install ``` 명령어 입력 결과 화면
 	
 ![image](img/project03.PNG)
 	
 03. ``` npm run dev ``` 를 실행하면 localhost:8080으로 접근하여 애플리케이션을 실행할 수 있다.
-* npm run dev 실행한 뷰 애플리케이션 초기화면
+* ``` npm run dev ``` 실행한 뷰 애플리케이션 초기화면
 	
 ![image](img/project05.PNG)
 	
-* npm run dev 명령어 입력 결과 화면
+* ``` npm run dev ``` 명령어 입력 결과 화면
 	
 ![image](img/project04.PNG)
 
