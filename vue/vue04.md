@@ -1,13 +1,13 @@
 # 💡뷰 프로젝트 구성 방법
 
-<!-- ## 📝목차 
+## 📝목차 
 [01-1. HTML 파일에서 뷰 코드 작성 시의 한계점](#01-1-HTML-파일에서-뷰-코드-작성-시의-한계점)
 
 [01-2. 싱글 파일 컴포넌트 체계](#01-2-싱글-파일-컴포넌트-체계)
 
 [01-3. 뷰 CLI](#01-3-뷰-CLI)
 
-[01-4. 뷰 CLI로 프로젝트 생성하기](#01-4-뷰-CLI로-프로젝트생성하기) -->
+[01-4. 뷰 CLI로 프로젝트 생성하기](#01-4-뷰-CLI로-프로젝트생성하기)
 
 
 <br><br>
@@ -67,8 +67,6 @@
            /* css 스타일 내용 */
 	</style>	
 ```
-	
-
 
 <br>
 
@@ -94,24 +92,27 @@
 
 ### 01-4. 뷰 CLI로 프로젝트 생성하기
 01.뷰 프로젝트를 생성할 빈폴더를 생성하고 빈 폴더에서 cmd창을 열어 ``` vue init webpack-simple ``` 입력
-
 * 명령어 입력 결과 화면
-![image]	
+	
+![image](img/project01.PNG)
 
 02. ``` npm install ``` 입력하여 뷰 애플리케이션을 구동하기 위한 관련 라이브러리를 모두 다운로드 한다.
-
 * 프로젝트 기본 폴더 구조
-![image]	
+	
+![image](img/project02.PNG)	
 
 * npm install 명령어 입력 결과 화면
-![image]
+	
+![image](img/project03PNG)
 	
 03. ``` npm run dev ``` 를 실행하면 localhost:8080으로 접근하여 애플리케이션을 실행할 수 있다.
 * npm run dev 실행한 뷰 애플리케이션 초기화면
-![image]
+	
+![image](img/project04.PNG)
 	
 * npm run dev 명령어 입력 결과 화면
-![image]
+	
+![image](img/project05.PNG)
 	
 
 	
