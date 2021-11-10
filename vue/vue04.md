@@ -81,12 +81,47 @@
 **뷰 CLI 설치**
 	
 * cmd 창에서 입력
- + vue-cli 설치  ``` npm install vue-cli -global ```
- + vue-cli 설치 여부 확인 ``` vue ``` 	
+  + vue-cli 설치  ``` npm install vue-cli -global ```
+  + vue-cli 설치 여부 확인 ``` vue ``` 	
 
-	
-	
 **뷰 CLI 명령어**
+	
+<figure>
+    <table>
+        <thead>
+            <tr>
+                <th>템플릿 종류</th>
+                <th>설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Vue init webpack</td>
+                <td>고급 웹팩 기능을 활용한 프로젝트 구성 방식. 테스팅, 문법 검사 등을 지원</td>
+            </tr>
+            <tr>
+                <td>Vue init webpack-simple</td>
+                <td>웹팩 최소 기능을 활용한 프로젝트 구성 방식. 빠른 화면 프로토타이핑용</td>
+            </tr>
+		<tr>
+                <td>Vue init browserify</td>
+                <td>고급 브라우저리파이 기능을 활용한 프로젝트 구성 방식. 테스팅, 문법 검사 등을 지원</td>
+            </tr>
+		<tr>
+                <td>Vue init browserify-simple</td>
+                <td> 브라우저리파이 최소 기능을 활용한 프로젝트 구성 방식. 빠른 화면 프로토타이핑용</td>
+            </tr>
+		<tr>
+                <td>Vue init simple</td>
+                <td>최소 뷰 기능만 들어간 HTML 파일 1개 생성</td>
+            </tr>
+		<tr>
+                <td>Vue init pwa</td>
+                <td>웹팩 기반의 프로그레시브 웹 앱(PWA, Progressive Web App) 기능을 지원하는 뷰 프로젝트</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>	
 
 <br>
 
@@ -103,17 +138,18 @@
 
 * npm install 명령어 입력 결과 화면
 	
-![image](img/project03PNG)
+![image](img/project03.PNG)
 	
 03. ``` npm run dev ``` 를 실행하면 localhost:8080으로 접근하여 애플리케이션을 실행할 수 있다.
 * npm run dev 실행한 뷰 애플리케이션 초기화면
 	
-![image](img/project04.PNG)
+![image](img/project05.PNG)
 	
 * npm run dev 명령어 입력 결과 화면
 	
-![image](img/project05.PNG)
-	
+![image](img/project04.PNG)
+
+* 맨 아래 3줄은 뷰 프로젝트가 ``` http://loaclhost:8080/ ``` 에 구동되고 있음을 알려주면서 웹팩 결과값(output)이 ``` /dist/ ``` 에서 제공됙 있다는 의미이다.
 
 	
 <br><br>
