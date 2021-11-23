@@ -1,9 +1,11 @@
 # 💡뷰엑스(Vuex), 뷰의 반응성(Vue Reactivity)
 
-## 📝목차 
-[01. Vuex](#01-Vuex)
+<br>
 
-[02. Vue Reactivity](#02-Vue-Reactivity)
+## 📝목차 
+### [01. Vuex](#01-Vuex)
+
+### [02. Vue Reactivity](#02-Vue-Reactivity)
 
 <br>
 
