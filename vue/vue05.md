@@ -48,7 +48,8 @@
   - 애플리케이션을 구현하려면 인스턴스를 생성한다.
   - 인스턴스가 생성될 때, data속성에 정의 된 객체들은 변환 작업을 거친다.
   - 라이브러리에서 data에 정의된 모든 속성(객체)을 **getter,setter** 의 형태로 변환한다. 
-  - getter와 setter는 사용자가 접근할 수 있는 속성이 아니고, 뷰 인스턴스에 정의해 놓은 data 속성에 변화가 생길 때 뷰에서 감지하기 위해 필요한 내부적 속성이다.  
+  - getter와 setter는 사용자가 접근할 수 있는 속성이 아니고, 뷰 인스턴스에 정의해 놓은 data 속성에 변화가 생길 때 뷰에서 감지하기 위해 필요한 내부적 속성이다.
+  - getter와 setter를 변환할 때는 자바스크립트 내장 API인 [Object.defineProperty()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty) 가 사용된다.   
 
 - watcher
   - 모든 컴포넌트에 존재하는 속성, 화면을 다시 그리는데 중요한 역할을 한다.
@@ -57,7 +58,7 @@
 - 뷰의 반응성은 인스턴스를 생성하는 시점에 생긴다. 
 - 따라서, 인스턴스를 정의할 때 data 속성에 정의하지 않고 인스턴스를 생성하고 data 속성에 객체를 추가하면 그 객체에는 반응성이 생기지 않는다. 
 - 반응성이 없다는 것은 해당 객체의 변화가 있든 없든 뷰에서 화면을 다시 갱신하지 않는다는 의미이다. 
-
+- [뷰 반응성 공식 가이드](https://kr.vuejs.org/v2/guide/reactivity.html)
 
 <br><br>
 						  
