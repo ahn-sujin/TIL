@@ -32,6 +32,10 @@
   ![image](img/vuex-diagram.png) 
   #### vuex 전체 흐름도
 
+<br> 
+
+### [👉vuex 더 살펴보기](https://github.com/ahn-sujin/vuex-test/blob/master/README.md)  
+
 <br>
 
 ## 02. Vue Reactivity
