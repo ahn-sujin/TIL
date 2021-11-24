@@ -27,6 +27,7 @@
  * **[라우터 & HTTP통신](./vue/vue02.md)**
  * **[템플릿](./vue/vue03.md)**
  * **[프로젝트 구성 방법](./vue/vue04.md)**
+ * **[뷰엑스(Vuex), 뷰의 반응성(Vue Reactivity)](./vue/vue05.md)**
 
 
 <br>
