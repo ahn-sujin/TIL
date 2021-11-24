@@ -28,6 +28,7 @@
  * **[템플릿](./vue/vue03.md)**
  * **[프로젝트 구성 방법](./vue/vue04.md)**
  * **[뷰엑스(Vuex), 뷰의 반응성(Vue Reactivity)](./vue/vue05.md)**
+ * **[서버 사이드 렌더링(SSR), 클라이언트 사이드 렌더링(CSR)](./vue.vue06.md)**
 
 
 <br>
