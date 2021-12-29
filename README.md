@@ -16,7 +16,7 @@
 <br>
 
 ## ✅ES6
-  * **[import / export](./)** 
+  * **[import / export](./ES6/modules.md)** 
 
 
 <br>
