@@ -119,6 +119,7 @@ myMath.plus(2,2);
 - 유저가 사용할 모듈만 import 할 수 있다.
 - async/await
 
+> 변경전
 ```javascript
 
 function doMath() {
@@ -129,6 +130,7 @@ btn.addEventListener('click', doMath);
 
 ```
 
+> 변경후
 ```javascript
 
 async function doMath() {
