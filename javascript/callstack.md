@@ -25,3 +25,27 @@ zero();
 ```
 callstack
 ```
+
+<br>
+
+**📍스택이 붕괴될때 에러가 나는 현상**
+
+```javascript
+
+function hello(){
+  bye();  
+}
+function bye(){
+  hello();
+}
+hello();
+ 
+ ```
+ 
+ > 실행결과
+ ```
+ uncaught RangeError: Maximum call stack size exceeded
+
+ ```
+ - 자바스크립트 스택에 올릴 수 있는 제한이 있음
+ - 계속 서로를 부르는 함수를 사용할 경우 에러가 발생 할 수 있음 
