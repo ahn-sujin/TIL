@@ -12,7 +12,7 @@
 ```
 - a값을 복사해서 b에 붙여넣었음 
 - 그래서 밑에서 a의 값을 바꿔도 b는 영향에서 벗어나게 됨(value 복사)
-- string, number, boolean, NaN, undefined, null에서 사용 
+- **string, number, boolean, NaN, undefined, null**에서 사용 
 
 <br>
 
@@ -55,6 +55,6 @@ console.log(x); // {a: 'bye'}
 
 ```
 - x를 b를 통해 업데이트 할 수 있음
-- array, object, function에서 사용
+- **array, object, function**에서 사용
 
 
