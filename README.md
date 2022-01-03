@@ -13,8 +13,8 @@
   * **[javascript에 대한 기초 지식 및 이론 정리](./javascript/javascript.md)** 
   * **[JSON.parse / JSON.stringify](./javascript/JSON.md)** 
   * **[Call Stack](./javascript/callstack.md)**
-  * **[Primitive Types](./javascript/Primitive Types.md)**
-  * **[Value Types and Reference Types](./javascript/value types and reference types.md)**
+  * **[Primitive Types](./javascript/Primitive_Types.md)**
+  * **[Value Types and Reference Types](./javascript/value_types_and_reference_types.md)**
 
 <br>
 
