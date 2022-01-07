@@ -22,7 +22,8 @@
 
 ## ✅ES6
   * **[import / export](./ES6/modules.md)** 
-  * **[Template Literal](./ES6/TemplateLiteral.md)** 
+  * **[Template Literal](./ES6/TemplateLiteral.md)**
+  * **[class](./ES6/class.md)**  
 
 
 <br>
