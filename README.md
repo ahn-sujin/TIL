@@ -16,7 +16,7 @@
   * **[Primitive Types](./javascript/Primitive_Types.md)**
   * **[Value Types and Reference Types](./javascript/value_types_and_reference_types.md)**
   * **[내장함수](./javascript/내장함수.md)**
-  * **[geeter, setter](./javascript/getter,setter.md)**
+  * **[getter, setter](./javascript/getter,setter.md)**
 
 <br>
 
