@@ -11,7 +11,7 @@ console.log(template); //템플릿 리터럴은 '작은따옴표(single quotes)'
 <br>
 
 - 일반적인 문자열에서 줄바꿈은 허용되지 않으며 공백(white-space)를 표현하기 위해서 백슬래시(/)로 시작하는 이스케이프 시퀀스(Escape Sequence)를 사용한다. 
-- ES6 템플릿 리터럴 내에 있는 모든 white-space는 있는 그대로 적용된다.
+- **ES6 템플릿 리터럴** 내에 있는 모든 **white-space는 있는 그대로 적용**된다.
 ```javascript
 const template = `<ul class="nav-items">
   <li><a href="#home">Home</a></li>
@@ -34,8 +34,8 @@ console.log(template);
 
 <br>
 
-- 템플릿 리터럴은 + 연산자를 사용하지 않아도 간단한 방법으로 새로운 문자열을 삽입할 수 있는 기능을 제공한다. 이를 문자열 인터폴레이션(String Interpolation)이라 한다.
-- 문자열 인터폴레이션은 ${ … }으로 표현식을 감싼다. 문자열 인터폴레이션 내의 표현식은 문자열로 강제 타입 변환된다.
+- 템플릿 리터럴은 + 연산자를 사용하지 않아도 간단한 방법으로 새로운 문자열을 삽입할 수 있는 기능을 제공한다. 이를 문자열 **인터폴레이션(String Interpolation)** 이라 한다.
+- **문자열 인터폴레이션은 ${ … }** 으로 표현식을 감싼다. 문자열 인터폴레이션 내의 표현식은 **문자열로 강제 타입 변환**된다.
 ```javascript
 const first = 'Ung-mo';
 const last = 'Lee';
