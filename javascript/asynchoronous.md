@@ -57,22 +57,79 @@ console.log(getData()); // undefined
 - 코드를 바로 실행하지 않고 지정한 시간만큼 기다렸다가 로직을 실행함
 
 ```javascript
+function work(){
+  setTimeout(() => {
+    const start = Date.now();
+    for(let = i; i < 100000000; i++){
+    
+    }
+    const end = Date.now();
+    console.log(end - start + 'ms');
+  }, 3000);
+}
 
+console.log('작업시작');
+work();
+console.log('작업중');
+
+// 작업시작 
+// 작업중
+// 84ms
 
 
 ```
-
 
 
 ### 2-3. 콜백함수
 - 함수 타입의 값을 파라미터로 넘겨주고 파라미터로 받은 함수를 일정 작업이 끝나고 나서 호출 해주는 함수
 
+> 예제1
 ```javascript
+function returnName(callback){
+  callback('asj');
+  console.log('만나서 반갑습니다.');
+}
 
+function sayHello(name){
+  console.log(`안녕하세요! ${name}님`);
+}
 
+returnName(sayHello);
+
+// 안녕하세요! asj님
+// 만나서 반갑습니다.
 
 ```
+- ```returnName```함수는 ```sayHello```라는 함수를 파라미터로 가지고 호출하게 되는데, 
+- ```returnNAme```함수는 ```sayHello```함수를 인자로 받아야하기 때문에 ```sayHello```함수가 먼저 실행된 뒤 ```returnName```함수가 실행되게 된다.
 
 
+> 예제2
+```javascript
 
+function work(callback){
+  setTimeout(() => {
+    const start = Date.now();
+    for(let i = 0; i < 100000000; i++){
+    
+    }
+    const end = Date.now();
+    console.log(end - start + 'ms');
+    callback(end - start);
+  },3000);
+}
+
+console.log('작업시작');
+work((ms) => {
+  console.log('작업이 끝났어요');
+  console.log(ms + 'ms 걸렸다고 해요.');
+});
+console.log('작업중');
+
+// 작업시작 
+// 작업중
+// 작업이 끝났어요 
+// 87 ms 걸렸다고 해요.
+
+```
 
