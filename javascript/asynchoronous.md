@@ -139,25 +139,34 @@ console.log('작업중');
 - 해결방법으로는 **promise** 와 **async**가 있음
 
 ```javascript
+function increaseAndPrint(n, callback){
+  setTimeout(() => {
+    const increased  = n+1;
+    console.log(increased);
+    if(callback){
+      callback(increased);
+    }
+  }, 1000);
+}
 
+//콜백지옥
+increaseAndPrint(0, n => {
+  increaseAndPrint(n, n => {
+    increaseAndPrint(n , n => {
+      increaseAndPrint(n, n => {
+        increaseAndPrint(n , n => {
+          console.log('작업 끝!');
+        })
+      })
+    })
+  })
+});
 
+//1
+//2
+//3
+//4 
+//5
+//작업 끝!
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
