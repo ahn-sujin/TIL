@@ -20,3 +20,30 @@ myPromise.then((result) => {
 //data
 
 ```
+
+## 2. promise의 3가지 상태
+- Pending(대기) :  비동기 처리 로직이 아직 완료도지 않은 상태
+- Fulfilled(이행,완료) : 비동기 처리가 완료되어 프로미스가 결과 값을 반환해준 상태
+- Rejected(실패) : 비동기 처리가 실패하거나 오류가 발생한 상태
+
+### pending(대기)
+```javascript
+new Promise();
+
+```
+- 위와 같이 ```new Promise()``` 메서드를 호출하면 대기(pending)상태가 된다.
+
+```javascript
+new Promise((resolve, reject) => {
+    // 실행코드...
+})
+
+```
+- ```new Promise()``` 메서드를 호출할 때, 콜백 함수를 선언할 수 있고, 콜백 함수의 인자는 ``````
+
+
+
+
+
+
+
