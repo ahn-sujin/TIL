@@ -115,4 +115,6 @@ async function logTodoTitle(){
 logTodoTitle() //delectus aut autem 
 
 ```
+- 코드를 실행하다가 발생한 네트워크 통신 오류뿐만 아니라 간단한 타입 오류 등의 일반 적인 오류까지도 ```catch```로 잡아낼 수 있다.
+- 발견된 에러는 ```error```객체에 담기게 된다.
 
