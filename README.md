@@ -24,7 +24,9 @@
 ## ✅ES6
   * **[import / export](./ES6/modules.md)** 
   * **[Template Literal](./ES6/TemplateLiteral.md)**
-  * **[class](./ES6/class.md)**  
+  * **[class](./ES6/class.md)** 
+  * **[promise](./ES6/promise.md)** 
+  * **[async&await](./ES6/async&await.md)**  
 
 
 <br>
