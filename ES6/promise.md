@@ -22,9 +22,9 @@ myPromise.then((result) => {
 ```
 
 ## 2. promise의 3가지 상태
-- Pending(대기) :  비동기 처리 로직이 아직 완료도지 않은 상태
-- Fulfilled(이행,완료) : 비동기 처리가 완료되어 프로미스가 결과 값을 반환해준 상태
-- Rejected(실패) : 비동기 처리가 실패하거나 오류가 발생한 상태
+- **Pending(대기)** :  비동기 처리 로직이 아직 완료도지 않은 상태
+- **Fulfilled(이행,완료)** : 비동기 처리가 완료되어 프로미스가 결과 값을 반환해준 상태
+- **Rejected(실패)** : 비동기 처리가 실패하거나 오류가 발생한 상태
 
 ### Pending(대기)
 ```javascript
@@ -77,7 +77,7 @@ myPromise.then((result) => {
 ```javascirpt
 new Promise((resolve, reject) => {
      reject();
-})
+});
 
 ```
 - 콜백 함수의 인자 ```reject```를 호출하면 실패상태가 됨
@@ -102,7 +102,7 @@ myPromise.then().catch((err) => {
 <br>
 
 ## 3. promise 함수
-- 제대로 응답을 받아오면 ```resolve()`` 메서드를 호출하고, 응답이 없으면 ```reject()```를 호출함
+- 제대로 응답을 받아오면 ```resolve()``` 메서드를 호출하고, 응답이 없으면 ```reject()```를 호출함
 - 호출된 메세드에 따라 ```then()```이나 ```catch()```로 분기하여 응답 결과 또는 오류를 출력함
 
 ```javascript
@@ -112,6 +112,58 @@ function increaseAndPrint(n) {
       const value = n + 1;
       if (value === 5) {
          reject(new Error("Request is failed"));
+      }
+      resolve(value);
+    }, 1000);
+  });
+}
+
+// 위 호출 결과에 따라 'resolve' 또는 'reject' 값 출력
+increaseAndPrint(0).then((n) => {
+  console.log("result:", n); //resolve 값 출력
+}).catch((err) => {
+  console.error(err); //reject 값 출력
+});
+  
+//result: 1    
+
+```
+
+### 여러 개의 프로미스 연결하기(Promise Chaining)
+```javascript
+function getData() {
+  return new Promise({
+    // ...
+  });
+}
+
+// then() 으로 여러 개의 프로미스를 연결한 형식
+getData()
+  .then((data) => {
+    // ...
+  })
+  .then((data) => {
+    // ...
+  })
+  .then((data) => {
+    // ...
+  });
+
+```
+- 여러 개의 프로미스를 연결하여 사용할 수 있다.
+- ```then()``` 매세드를 호출하고 나면 새로운 프로미스 객체가 반환된다.
+
+```javascript
+function increaseAndPrint(n) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const value = n + 1;
+      if (value === 5) {
+        // const error = new Error();
+        // error.name = "오류다오류";
+        // reject(error);
+        // return;
+        reject(new Error("Request is failed"));
       }
       console.log(value);
       resolve(value);
@@ -137,18 +189,16 @@ increaseAndPrint(0)
   })
   .catch((e) => {
     console.log(e);
-  })
+  });
   
-  //1
-  //2
-  //3
-  //4
-  //5
-  // Error: Request is failed
+//1
+//2
+//3
+//4
+//5
+//Error: Request id failed
 
 ```
-
-
 
 
 
