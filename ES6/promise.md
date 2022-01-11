@@ -128,6 +128,7 @@ increaseAndPrint(0).then((n) => {
 //result: 1    
 
 ```
+<br>
 
 ### 여러 개의 프로미스 연결하기(Promise Chaining)
 ```javascript
