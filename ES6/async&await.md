@@ -1,5 +1,6 @@
 ## asyns & await
 - async와 await는 자바스크립트의 비동기 처리 패턴 중 가장 최근에 나온 문법이다.
+- Promise의 객체를 반환한다.
 - 기존의 비동기 처리 방식인 콜백 함수와 프롬스의 단점을 보완하고 개발자가 읽기 좋은 코드를 작성하게 도와준다.
 
 <br>
@@ -46,8 +47,8 @@ async function logItems() {
 ```javascript 
 function fetchItems() {
   return new Promise(function(resolve, reject) {
-    setTimeout(function() {
-      var items = [1,2,3];
+    setTimeout(() => {
+      const items = [1,2,3];
       resolve(items)
     }, 3000);
   });
@@ -88,14 +89,14 @@ try{
 ```javascript
 function fetchUser() {
   var url = 'https://jsonplaceholder.typicode.com/users/1'
-  return fetch(url).then(function(response) {
+  return fetch(url).then((response) => {
     return response.json();
   });
 }
 
 function fetchTodo() {
   var url = 'https://jsonplaceholder.typicode.com/todos/1';
-  return fetch(url).then(function(response) {
+  return fetch(url).then((response) => {
     return response.json();
   });
 }
