@@ -27,7 +27,7 @@
   * **[class](./ES6/class.md)** 
   * **[promise](./ES6/promise.md)** 
   * **[async&await](./ES6/async&await.md)**
-  * **[비구조화 할당](./ES6/async&await.md)**   
+  * **[비구조화 할당](./ES6/destructuring_assignment.md)**   
 
 
 <br>
