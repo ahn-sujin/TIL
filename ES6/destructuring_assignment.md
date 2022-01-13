@@ -113,7 +113,7 @@ console.log(tiger); // TIGER
 <br> 
 
 #### 3-2. 객체
-```javascirpt
+```javascript
 const { cat, dog, tiger = "TIGER" } = {
   cat: "CAT",
   dog: "DOG"
@@ -141,7 +141,7 @@ console.log(monkey_name); // MONKEY
 
 <br>
 
-```javascirpt
+```javascript
 function renderUser({name, age, addr}){
   console.log(name);
   console.log(age);
@@ -173,7 +173,7 @@ users.map((user) => {
 <br>
 
 ### 5. 중첩된 객체 및 배열의 비구조화
-```javascirpt
+```javascript
 const kim = {
   name: 'kim',
   age: 10,
