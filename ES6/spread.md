@@ -130,6 +130,7 @@ console.log(attribute); //cute
 console.log(slime); {name: '슬라임'}
 
 ```
+<br>
 
 ## 3. 함수 파라미터에서의 rest
 > 수정 전
@@ -150,7 +151,11 @@ const result = sum(1, 2, 3, 4, 5, 6);
 console.log(result); //21
 
 ```
--sum 함수는 7개의 파라미터를 받아오는데, 아래에서 사용 할때에는 6개만 넣어줬습니다. 그러면, g 값이 undefined 가 되기 때문에 sum 에 더하는 과정에서 += undefined 를 하게 되면 결과는 NaN 이 되버립니다. 그렇기 때문에 함수에서 하나하나 유효한 값인지 확인
+- sum 함수는 7개의 파라미터를 받아오는데, 아래에서 사용 할때에는 6개만 넣었을 때, 
+- ```g``` 값이 ```undefined``` 가 되기 때문에 sum 에 더하는 과정에서 ```+= undefined``` 를 하게 되면 결과는 ```NaN``` 이 된다. 
+- 그렇기 때문에 함수에서 하나하나 유효한 값인지 확인해야한다.
+
+<br>
 
 > 수정 후 
 ```javascript
@@ -162,13 +167,39 @@ const result = sum(1, 2, 3, 4, 5, 6);
 console.log(result); // 21
 
 ```
+- 함수의 파라미터가 몇개가 될 지 모르는 상황에서 rest 파라미터를 사용하면 매우 유용하다. 
+- ```result``` 가 가르키고 있는 것은 함수에서 받아온 파라미터들로 이루어진 배열이다.
+- 파라미터들이 들어가있는 배열을 받았으니, ```reduce```함수를 사용해 모두 더해준다. 
 
-
-
+<br> 
 
 ### 4. 함수 인자와 spread
+> 수정 전 
+```javascript
+function sum(...rest) {
+  return rest.reduce((acc, current) => acc + current, 0);
+}
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const result = sum(
+  numbers[0],
+  numbers[1],
+  numbers[2],
+  numbers[3],
+  numbers[4],
+  numbers[5]
+);
+console.log(result); //21
+
+```
 
 
+
+> 수정 후 
+```javascript
+
+
+```
 
 
 
