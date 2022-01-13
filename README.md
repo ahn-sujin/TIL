@@ -26,7 +26,8 @@
   * **[Template Literal](./ES6/TemplateLiteral.md)**
   * **[class](./ES6/class.md)** 
   * **[promise](./ES6/promise.md)** 
-  * **[async&await](./ES6/async&await.md)**  
+  * **[async&await](./ES6/async&await.md)**
+  * **[비구조화 할당](./ES6/async&await.md)**   
 
 
 <br>
