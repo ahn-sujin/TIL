@@ -90,14 +90,14 @@ new Vue({
 - UI의 그룹 (header, footer, setion 등...) 이다 	
 
 ### 02-2. 컴포넌트 등록하기
-* ** 전역 컴포넌트 ** 
+* 전역 컴포넌트
 ```javascript
 Vue.component('컴포넌트 이름', {
 	// 컴포넌트 내용
 });
 ```
 	
-* ** 지역 컴포넌트 ** : 인스턴스 component 속성을 추가하고 등록할 컴포넌트 이름과 내용을 정의
+* 지역 컴포넌트 : 인스턴스 component 속성을 추가하고 등록할 컴포넌트 이름과 내용을 정의
 ```javascript
 new Vue({
 	components: {
