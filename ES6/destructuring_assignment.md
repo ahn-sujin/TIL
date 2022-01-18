@@ -184,7 +184,7 @@ const kim = {
   ]
 };
 
-let { name: userName, friends: [ ,{ name: jpFriend }] } = kim;
+let { name: userName, friends: [ { name: koFriend }, { name: jpFriend }] } = kim;
 console.log(userName); // kim
 console.log(jpFriend); // miko
 
