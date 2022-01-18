@@ -199,7 +199,7 @@ const Func = () => {}
 console.log(Func.prototype) //undefined
 
 ```
-하지만 화살표 함수는 prototype 프로퍼티를 가지고 있지 않다.
+하지만 **화살표 함수는 prototype 프로퍼티를 가지고 있지 않다.**
 
 <br>
 
