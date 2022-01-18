@@ -150,14 +150,69 @@ obj.getName();
 ```
 function 키워드로 만들어진 **메소드의 this**는 **자신을 포함하는 객체를 바인딩** 한다.
 
+<br>
 
+### 화살표 함수의 this
+- 화살표 함수는 함수를 선언할 때 this에 바인딩할 객체가 정적으로 결정된다.
+- 화살표 함수는 자신의 ```this```를 바인딩하지 않고 언제나 상위 스코프인 ```this```를 바인딩한다. 
+- 이를 **Lexical this*** 라고 한다. 
 
 <br>
 
-## 화살표 함수를 사용해서는 안되는 경우
+> **일반 함수의 this**
+
+```javascript
+const func = () => {
+    console.log(this); // window
+}
+func();
+
+```
+일반 함수의 경우 function 키워드와 마찬가지로 전역 객체인 ```window```를 바인딩한다.
+
+<br> 
+
+> **생성자 함수의 this**
+
+```javascript
+const Func = () => {
+    console.log(this);
+}
+const obj = new Func(); // Uncaught TypeError: Func is not a constructor
+
+```
+화살표 함수는 생성자 함수로 사용할 수 없다.
+
+```javascript
+function Func() {}
+console.log(Func.prototype); // {constructor: ƒ}
+
+```
+기존의 function 키워드로 만든 일반적인 생성자 함수는 prototype 프로퍼티를 가지며, prototype 프로퍼티가 가르키는 프로토 타입 객체의 constructor를 사용한다.
 
 
+```javascript
+const Func = () => {}
+console.log(Func.prototype) //undefined
 
+```
+하지만 화살표 함수는 prototype 프로퍼티를 가지고 있지 않다.
 
+<br>
+
+> **메소드의 this**
+
+```javascript
+var obj = {
+    myName: '나나',
+    getName: () => {
+        console.log(this); // window
+        console.log(this.myName); // undefined
+    }
+}
+obj.getName();
+
+```
+화살표 함수로 만들어진 메소드의 ```this```는 자신을 포함하는 객체를 바인딩하지 않고 ```window```를 바인딩하기 때문에 **화살표 함수는 메소드에 적합하지 않다.**
 
 
