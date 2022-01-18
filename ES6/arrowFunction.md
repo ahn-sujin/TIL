@@ -104,6 +104,52 @@ console.log(result);
 
 ## this
 
+### function 키워드 함수의 this
+- function 키워드로 생성된 함수는 함수가 어떻게 호출되었는지에 따라 ```this```가 바인딩할 객체가 동적으로 결정된다. 
+
+<br>
+
+> **일반 함수의 this**
+
+```javascript
+function func() {
+    console.log(this); // window
+}
+func();
+
+```
+일반 함수 (전역 스코프에 있는 함수)를 호출하게 되면 ```this```는 전역 객체인 ```window```를 바인딩한다.
+
+<br> 
+
+> **생성자 함수의 this**
+
+```javascript
+function Func() {
+    console.log(this); // Func {}
+}
+var obj = new Func();
+
+```
+```new 키워드```를 사용하여 **생성자함수** 호출 방식으로 obj 객체를 생성하면 함수 안에서의 **this는 생성자 함수를 바인딩** 한다.
+
+<br>
+
+> **메소드의 this**
+
+```javascript
+var obj = {
+    myName: '나나',
+    getName: function() {
+        console.log(this); // {myName: "나나", getName: ƒ}
+        console.log(this.myName); // 나나
+    }
+}
+obj.getName();
+
+```
+function 키워드로 만들어진 **메소드의 this**는 **자신을 포함하는 객체를 바인딩** 한다.
+
 
 
 <br>
