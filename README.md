@@ -27,6 +27,7 @@
 ## ✅ES6
   * **[import / export](./ES6/modules.md)** 
   * **[Template Literal](./ES6/TemplateLiteral.md)**
+  * **[화살표함수(Arrow function)](./ES6/arrowFunction.md)**
   * **[class](./ES6/class.md)** 
   * **[promise](./ES6/promise.md)** 
   * **[async&await](./ES6/async&await.md)**
