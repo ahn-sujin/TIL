@@ -181,7 +181,7 @@ const Func = () => {
 const obj = new Func(); // Uncaught TypeError: Func is not a constructor
 
 ```
-화살표 함수는 생성자 함수로 사용할 수 없다.
+**화살표 함수는 생성자 함수로 사용할 수 없다.**
 
 <br>
 
