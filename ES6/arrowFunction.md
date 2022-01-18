@@ -183,6 +183,8 @@ const obj = new Func(); // Uncaught TypeError: Func is not a constructor
 ```
 화살표 함수는 생성자 함수로 사용할 수 없다.
 
+<br>
+
 ```javascript
 function Func() {}
 console.log(Func.prototype); // {constructor: ƒ}
@@ -190,6 +192,7 @@ console.log(Func.prototype); // {constructor: ƒ}
 ```
 기존의 function 키워드로 만든 일반적인 생성자 함수는 prototype 프로퍼티를 가지며, prototype 프로퍼티가 가르키는 프로토 타입 객체의 constructor를 사용한다.
 
+<br>
 
 ```javascript
 const Func = () => {}
