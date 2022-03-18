@@ -20,6 +20,11 @@
   * **[프로토타입](./javascript/프로토타입.md)**
   * **[getter, setter](./javascript/getter,setter.md)**
   * **[비동기적 처리의 이해](./javascript/asynchoronous.md)**
+  
+  <hr>
+  
+  ### 오류해결
+  * **[addEventListener](./javascript/addEventListener오류.md)**
 
 
 <br>
