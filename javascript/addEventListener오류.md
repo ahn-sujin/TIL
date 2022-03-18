@@ -4,7 +4,7 @@
 
 > Uncaught TypeError: Cannot read property 'addEventListener' of null
 
-[!image]()
+![image](img/addEventListener.PNG)
 
 <br>
 
