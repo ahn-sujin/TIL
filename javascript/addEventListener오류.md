@@ -4,7 +4,7 @@
 
 > Uncaught TypeError: Cannot read property 'addEventListener' of null
 
-![image](img/addEventListener.PNG)
+![image](image/addEventListener.PNG)
 
 <br>
 
@@ -53,7 +53,7 @@
 #### 2. window.onload = function(){} 사용한다.
 - ```window.onload = function(){}``` 함수는 **웹브라우저의 모든 구성요소에 대한 로드가 끝났을 때 브라우저에 의해서 호출되는 함수**로,
 해당 부분에 넣으면 HTML을 모두 로드한 뒤에 함수를 호출한다.
-- head태그 내부에 script 영역을 참조하는 부분이 있지만, window.onload 함수 내부에 문제가 되는 함수를 넣어줌으로써 해결할 수 있다.
+- head태그 내부에 script 영역을 참조하는 부분이 있지만, ```window.onload``` 함수 내부에 문제가 되는 함수를 넣어줌으로써 해결할 수 있다.
 
 ```html
 <!DOCTYPE html>
