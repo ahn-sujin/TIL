@@ -150,8 +150,9 @@ switch ( num ){
 }
 
 ```
-[!image]
+![image](image/switch_error.PNG)
 
+<br>
 
 > if else if 조건문
 ```javascript
