@@ -27,8 +27,8 @@ elem.style.top = top; // 예시: '456px'
 ## className과 classList
 
 ### className
-- ```element.className```에 무언가를 대입하면 클래스 문자열 전체가 바뀐다.
-- 요소의 모든 클래스를 변경한다.
+- ```element.className```에 무언가를 대입하면 class 문자열 전체가 바뀐다.
+- **요소의 모든 클래스를 변경**한다. (기존 class 속성은 **초기화**된다.)
 
 > 변경전
 ```html
@@ -53,11 +53,65 @@ div.className = 'hello';
 
 ### classList
 - 속성값 전체를 바꾸는 것이 아니라 클래스 하나만 추가하거나 제거하고 싶을 때 사용한다.
-- ```element.classList.add/remove("class") ``` :  class를 추가하거나 제거
-- ``` element.classList.toggle("class") ``` : class가 존재할 경우 class를 제거하고, 그렇지 않은 경우엔 추가
-- ``` element.classList.contains("class") ``` : class 존재 여부에 따라 true/false를 반환
+- ```element.classList.add/remove('class명') ``` :  class를 추가하거나 제거
+- ``` element.classList.toggle('class명') ``` : class가 존재할 경우 class를 제거하고, 그렇지 않은 경우엔 추가
+- ``` element.classList.contains('class명') ``` : class 존재 여부에 따라 true/false를 반환
+
+<br>
+
+## 클래스 추가 ```element.classList.add('className')```
+- HTML 엘리먼트가 가진 기존 class속성을 유지한채, 새로운 class 을 추가한다. 
+
+> 변경전
+```html
+<div class="greeting title">
+  <h1>Hello World!</h1>
+</div>
+
+```
+
+> 변경 후
+```javascript
+div.className = 'hello';
+
+```
+
+```html
+<div class="hello">
+  <h1>Hello World!</h1>
+</div>
+
+```
+
+<br>
+
+## 클래스 삭제 ```element.classList.remmove('className')```
+
+
+<br>
+
+## 클래스 토글 ```element.classList.toggle('className')```
+
+
+<br>
+
+## 클래스 확인 ```element.classList.contains('className')```
+
+
+<br>
+
+## 클래스 교체 ```element.classList.replace('className')```
 
 
 
+
+<br>
+
+#### 참고
+https://hianna.tistory.com/469
+
+https://ko.javascript.info/styles-and-classes
+
+https://velog.io/@ssumniee/JS-%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85-%EC%B6%94%EA%B0%80-%EC%82%AD%EC%A0%9C
 
 
