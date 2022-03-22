@@ -77,7 +77,7 @@ switch(a) {
 
 ## switch문 장점 : 간결성, 가독성
 - ```switch 조건문```은 ```if else if 조건식```으로 변환할 수 있다.
-- . 두 식을 비교해보면 ```switch 조건문```이 조금더 간결하고 가독성이 높다.
+- 두 식을 비교해보면 ```switch 조건문```이 조금더 간결하고 가독성이 높다.
 
 > switch문
 ```javascript
@@ -121,21 +121,53 @@ if ( drink = "콜라" ){
 
 ```
 
-
-
-
-
 <br>
 
 
 ## switch문 단점 : 상수
+- ```switch()```의 괄호 사이에는 자유롭게 데이터가 올 수 있지만, ```case```뒤에는 상수만 올 수 있다. 
+- case뒤에 변수, 조건식 등이 오게 되면 ```switch 조건문```이 작동하지 않는다.
+- 비교 대상에 변수나 조건식을 비교해야 할 경우 ```switch문``` 대신 ```if else if 조건문```을 사용해야 한다.
+
+> switch문
+```javascript
+let num = prompt( "원하는 숫자를 입력하세요.", "" );
+switch ( num ){
+     case num > 0 :  
+      document.write ( "입력한 숫자는 양수입니다." );
+      break;
+
+    case num = 0 :   
+      document.write ( "입력한 숫자는 0입니다." );
+      break;
+
+    case num < 0 :  
+      document.write ( "입력한 숫자는 음수입니다." );
+      break;
+
+    default
+      document.write ( "숫자를 입력해주세요." );
+}
+
+```
+[!image]
 
 
+> if else if 조건문
+```javascript
+let num = prompt( "원하는 숫자를 입력하세요.", "" );=
+if ( num > 0 ){
+     document.write ( "입력한 숫자는 양수입니다." );
+}else if ( num = 0 ){
+     document.write ( "입력한 숫자는 0입니다." );
+}else if ( num < 0){
+     document.write ( "입력한 숫자는 음수입니다." );
+}else{
+     document.write ( "숫자를 입력해주세요." );
+}
 
-
-
-
-
+```
+- 비교 대상이 상수 값이면 ```switch 조건문```이 가능하고 그 밖에 보편적인 경우 ```if 조건문```을 사용한다. 
 
 
 <br>
