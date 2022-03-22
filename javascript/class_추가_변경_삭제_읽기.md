@@ -30,24 +30,21 @@ elem.style.top = top; // 예시: '456px'
 - ```element.className```에 무언가를 대입하면 class 문자열 전체가 바뀐다.
 - **요소의 모든 클래스를 변경**한다. (기존 class 속성은 **초기화**된다.)
 
-> 변경전
 ```html
+<!-- 변경 전 -->
 <div class="greeting title">
   <h1>Hello World!</h1>
 </div>
 
-```
-
-> 변경 후
-```javascript
-div.className = 'hello';
-
-```
-
-```html
+<!-- 변경 후 -->
 <div class="hello">
   <h1>Hello World!</h1>
 </div>
+
+```
+
+```javascript
+div.className = 'hello';
 
 ```
 
@@ -60,49 +57,147 @@ div.className = 'hello';
 <br>
 
 ## 클래스 추가 ```element.classList.add('className')```
-- HTML 엘리먼트가 가진 기존 class속성을 유지한채, 새로운 class 을 추가한다. 
+- HTML 엘리먼트가 가진 **기존 class속성을 유지한채, 새로운 class 을 추가**한다. 
 
-> 변경전
+> 
 ```html
+<!-- 변경 전 -->
 <div class="greeting title">
   <h1>Hello World!</h1>
 </div>
 
-```
-
-> 변경 후
-```javascript
-div.className = 'hello';
-
-```
-
-```html
-<div class="hello">
+<!-- 변경 후 -->
+<div class="greeting title hello">
   <h1>Hello World!</h1>
 </div>
 
 ```
 
+```javascript
+div.classList.add('hello');
+
+```
+
 <br>
 
-## 클래스 삭제 ```element.classList.remmove('className')```
+## 클래스 삭제 ```element.classList.remove('className')```
+- HTML 엘리먼트의 class 속성 중에서 **기존의 class 속성 값은 유지되면, 인자로 사용된 class 값만 삭제**한다.
 
+```html
+<!-- 변경 전  -->
+<div class="greeting title">
+  <h1>Hello World!</h1>
+</div>
+
+<!-- 변경 후  -->
+<div class="greeting">
+  <h1>Hello World!</h1>
+</div>
+
+```
+
+```javascript
+div.classList.remove('title');
+
+```
 
 <br>
 
 ## 클래스 토글 ```element.classList.toggle('className')```
+- HTML 엘리먼트에 **특정 동작에 따라 class값이 추가되었다가 삭제된다.** 
+- **첫번째 인자는 class값, 두번째 인자에는 boolean값**을 받는다.
+
+<br>
+
+> 인자가 하나만 있을 때 ```element.classList.toggle('className');```
+```html
+<!-- 실행 전  -->
+<button class="hello" onclick="buttonClicked()">button</button> 
+
+<!-- 실행 후  -->
+<button class="hello clicked" onclick="buttonClicked()">button</button> 
+
+<!-- 재실행 -->
+<button class="hello" onclick="buttonClicked()">button</button> 
+
+```
+
+```javascript
+funtion buttonClicked() {
+  button.classList.toggle('clicked');
+}
+```
+- 인자가 하나일 때, **class값을 토글링** 한다.
+- 인자로 사용된 **class값이 존재**하면 해당 **class값을 제거하고 false를 반환**한다.
+- 인자로 사용된 **class값이 존재하지 않으면**, **class값을 추가하고 true를 반환**한다. 
+
+
+<br><br>
+
+
+> 두번째 인자가 존재 할 때 ```element.classList.toggle('className', true or false);```
+```html
+<!-- 실행 전  -->
+<button class="hello" onclick="buttonClicked()">button</button> 
+
+<!-- 실행 후  -->
+<button class="hello clicked" onclick="buttonClicked()">button</button> 
+
+
+```
+
+```javascript
+funtion buttonClicked() {
+  button.classList.toggle('clicked', true);
+}
+```
+- 두번째 값이 **true**일 경우, 인자로 사용된 **class값을 추가**한다.
+- **false**일 경우, **class값을 제거**한다.  
 
 
 <br>
 
 ## 클래스 확인 ```element.classList.contains('className')```
+- 인자로 사용된 class값이 존재하는지 확인한다.
+- **class값이 존재하면 true, 존재하지 않으면 false를 반환**한다.
+
+``` html
+<div class="title greeting">
+  <h1>Hello World!</h1>
+</div>
+
+```
+
+```javascript
+div.classList.contains('hello'); // false
+div.classList.contains('title'); // true
+
+```
 
 
 <br>
 
 ## 클래스 교체 ```element.classList.replace('className')```
+- 존재하는 class 속성 값을 다른 class값으로 교체한다. 
+- **교체할 class 값을 첫번째, 새로운 class 값을 두번째 인자**로 받는다.
 
+```html
+<!-- 변경 전  -->
+<div class="title greeting">
+  <h1>Hello World!</h1>
+</div>
 
+<!-- 변경 후  -->
+<div class="title hello">
+  <h1>Hello World!</h1>
+</div>
+
+```
+
+```javascript
+div.classList.replace('greeting', 'hello');
+
+```
 
 
 <br>
