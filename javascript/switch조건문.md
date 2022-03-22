@@ -38,9 +38,10 @@ switch (변수){
 ```javascript
 let a = 2;
 
+//=============== break 사용하지 않았을 때 ===================
 switch(a) {
   case 1 : 
-    console.log('a는 1입니다.');
+        console.log('a는 1입니다.');
    case 2:
         console.log('a는 2입니다.'); 
     default:
@@ -51,11 +52,83 @@ switch(a) {
 // a는 2입니다.
 // a는 1도 2도 아닙니다.
 
+//=============== break 사용했을 때 ===================
+switch(a) {
+  case 1 : 
+        console.log('a는 1입니다.');
+        break;
+   case 2:
+        console.log('a는 2입니다.'); 
+        break;
+    default:
+        console.log('a는 1도 2도 아닙니다.'); 
+}
+
+// 결과
+// a는 2입니다.
+
+```
+- **break를 사용하지 않았을 때**, 'a는 2입니다.'와 'a는 1도 2도 아닙니다.'가 **모두 출력**이 된다.
+-  switch문의 조건과 일치하는 두 번째 case 문의 동작 부분을 수행한 다음, **break문이 없기 때문에 그다음 동작도 수행**해 버린 것이다.
+-  ```case문```은 ```switch문``` 내부의 여러 동작들 중에서 **가장 먼저 동작할 시작점을 찾는 기준**이라고 할 수 있다.
+-   **case별로 동작들을 구분**하고 싶다면 필요한 구간에 **break문을 작성**해줘야 한다.
+
+<br>
+
+## switch문 장점 : 간결성, 가독성
+- ```switch 조건문```은 ```if else if 조건식```으로 변환할 수 있다.
+- . 두 식을 비교해보면 ```switch 조건문```이 조금더 간결하고 가독성이 높다.
+
+> switch문
+```javascript
+let drink = prompt ( "가격 조회를 원하는 음료수를 입력하세요.( 콜라, 사이다, 커피 中 택1)", "" );
+
+switch (drink){
+    case "콜라" :
+      document.write ( "800원" );
+      break;
+
+    case "사이다" :
+      document.write ( "900원");
+      break;
+
+    case "커피" :
+      document.write ( "700원" );
+      break;
+
+    default :
+      document.write ("잘못된 단어 입력");
+}
+
 ```
 
-- 'a는 2입니다.'와 'a는 1도 2도 아닙니다.'가 모두 출력이 된다.
--  switch문의 조건과 일치하는 두 번째 case 문의 동작 부분을 수행한 다음,break문이 없기 때문에 그다음 동작부도 수행해 버린 것이다.
+<br>
 
+
+> if else if문
+```javascript
+let drink = prompt ( "가격 조회를 원하는 음료수를 입력하세요.( 콜라, 사이다, 커피 中 택1)", "" );
+
+if ( drink = "콜라" ){
+    document.write ( "800원" );
+}else if (drink = "사이다"){
+    document.write ( "900원" );
+}else if (drink = "커피"){
+    document.write ( "700원" );
+}else{
+    document.write ( "잘못된 단어 입력" );
+}
+
+```
+
+
+
+
+
+<br>
+
+
+## switch문 단점 : 상수
 
 
 
