@@ -92,6 +92,7 @@ console.log('ahn : ', ahn.sum());
 ```
 
 <br>
+
 > class 내부 정의하기
 ```javascript
 class Score{
@@ -119,9 +120,7 @@ console.log("kim.sum()",kim.sum());
 // kim : Score{name:'gildong', first:60, second:50}
 // kim : prototype:110
 
-
 ```
-- 
 
 <br>
 
