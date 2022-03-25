@@ -16,14 +16,16 @@
   * **[Primitive Types](./javascript/Primitive_Types.md)**
   * **[Value Types and Reference Types](./javascript/value_types_and_reference_types.md)**
   * **[내장함수](./javascript/내장함수.md)**
-  * **[객체생성자](./javascript/객체생성자.md)**
-  * **[프로토타입](./javascript/프로토타입.md)**
   * **[getter, setter](./javascript/getter,setter.md)**
   * **[비동기적 처리의 이해](./javascript/asynchoronous.md)**
   * **[className과 classList](./javascript/class_추가_변경_삭제_읽기.md)**
   * **[switch 조건문](./javascript/switch조건문.md)**
   * **[객체](./javascript/객체.md)**
-  
+  * **[객체- this](./javascript/객체_this.md)**
+  * **[객체- constructor](./javascript/객체_constructor.md)**
+  * **[객체- prototype](./javascript/객체_prototype.md)**
+  * **[객체- class](./javascript/객체_class.md)**
+
   <hr>
   
   ### 오류해결
