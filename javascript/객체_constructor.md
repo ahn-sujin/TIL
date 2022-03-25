@@ -59,7 +59,7 @@ console.log('new Score() :', new Score()); // 객체 생성
 
 <br>
 
-```javascritpt
+```javascript
 let ahn = new Score();
 let kim = new Score();
 
