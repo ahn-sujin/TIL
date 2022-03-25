@@ -66,3 +66,80 @@ console.log('ahn : ', ahn);
 <br> 
 
 ## 메소드 구현
+> prototype 이용
+```javascript
+class Score{
+  constructor(name,first,second) {
+    this.name = name;
+    this.first = first;
+    this.second = second;
+    console.log('constructor');
+  }
+}
+
+Score.prototype.sum = function() {
+  return 'prototype:' + (this.first + this.second);
+}
+
+let ahn = new Score('sujin',90, 100);
+console.log('ahn : ', ahn);
+console.log('ahn : ', ahn.sum());
+
+//결과
+// ahn: Score{name:'sujin', first:90, second:100}
+// ahn :  prototype:190
+
+```
+
+<br>
+> class 내부 정의하기
+```javascript
+class Score{
+  constructor(name,first,second) {
+    this.name = name;
+    this.first = first;
+    this.second = second;
+  }
+  sum(){
+     return 'prototype:' + (this.first + this.second);
+  }
+}
+
+let ahn = new Score('sujin',90,100);
+console.log('ahn : ',ahn);
+console.log("ahn.sum()",ahn.sum());
+
+let kim = new Score('gildong',60,50);
+console.log('kim : ',kim);
+console.log("kim.sum()",kim.sum());
+
+// 결과
+// ahn : Score{name:'sujin', first:90, second:100}
+// ahn : prototype:190
+// kim : Score{name:'gildong', first:60, second:50}
+// kim : prototype:110
+
+
+```
+- 
+
+<br>
+
+> 특정 객체의 메소드 만 수정할 때
+```javascript
+let ahn = new Score('sujin',90,100);
+ahn.sum = function(){
+  return 'this:' + (this.first + this.second);
+}
+
+```
+
+
+
+
+
+
+
+
+
+
