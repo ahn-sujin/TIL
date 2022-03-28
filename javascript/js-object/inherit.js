@@ -1,5 +1,4 @@
 // * 평균을 구하는 avg메소드 추가하기
-
 class Score {
     constructor(name, first, second) {
         this.name = name;
