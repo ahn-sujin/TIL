@@ -21,7 +21,7 @@
   * **[className과 classList](./javascript/class_추가_변경_삭제_읽기.md)**
   * **[switch 조건문](./javascript/switch조건문.md)**
   * **[객체 기본](./javascript/객체.md)**
-  * **[객체 심화](./javascript/객체상속.md)**
+  * **[객체 심화](./javascript/객체_상속.md)**
 
   <hr>
   
