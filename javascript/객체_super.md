@@ -1,3 +1,12 @@
+# Index
+### 1. [객체 상속](./객체_상속.md)
+### 2. [객체 super](./객체_super.md)
+### 3. [객체 자바스크립트에서의 상속(prototype link, object_inheritance)](./객체_자바스크립트_상속.md)
+### 4. [객체와 함수(call, bind)](./객체와함수.md)
+### 5. [prototype과 prototype link의 관계](./객체_prototype과prototype_link.md)
+
+<br>
+
 ## super란? 
 -  **자식 클래스에만 새로운 기능, 매소드, 인자를 추가**하고 싶을때 사용하는 기능이다. 
 -  부모 클래스가 가지고 있는 기능을 실행시킬 수 있다. 
