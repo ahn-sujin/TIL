@@ -22,7 +22,7 @@
   * **[switch 조건문](./javascript/switch조건문.md)**
   * **[객체 기본(this,constructor,prototype,class)](./javascript/객체.md)**
   * **[객체 심화(상속,super,call,bind,prototype,prototype link)](./javascript/객체_상속.md)**
-  * **[Navigatior객체 & Geolocation API](./javascript/geolocation.md)** 
+  * **[Navigatior객체 & Geolocation API](./javascript/geolacation.md)** 
   <hr>
   
   ### 오류해결
