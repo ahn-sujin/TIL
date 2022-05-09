@@ -2,6 +2,9 @@
 - 반복되는 코드를 함수를 통해 정리할 수 있다.
 - ❗ **반복문으로 반복되는 코드를 정리 할 수 있지만, 중복된 코드가 일정한 순서나 연속성 없을 때는 함수를 사용한다.**
 
+<br>
+
+> 사용전
 ```javascript
 document.write('1');
 document.write('2');
@@ -15,6 +18,7 @@ document.write('3');
 
 <br>
 
+> 사용후
 ```javascript
 function two() {
   document.write('2');
