@@ -59,5 +59,51 @@ sum(2,3);
 - **인자(Argument)**: 함수 호출 시 전달되는 실제 값
  - ```sum```의 괄호 안에 넣어서 함수로 전달되는 숫자 2,3을 인자라고 부른다. 
 
+<br>
+
+## 함수 - 리턴
+- 리턴은 함수의 출력 값이다.
+- 리턴은 함수가 어떠한 기능을 직접적으로 수행하는 것이 아닌, **적절한 값을 돌려주도록** 한다.
+- 리턴은 받은 값에 변화를 주고 싶을 때, 함수를 새로 만들지 않고도 기존의 함수를 응용하여 사용 할 수 있다.
+
+<br>
+
+> 사용전
+```javascript
+function sum(left, right) {
+  document.write(left + right);
+}
+sum(2,3) //결과 5
+
+function sumColor(left, right){
+  document.write(`<div style="color: red;">${left+right}</div>`);
+}
+sumColor(2,3); //결과 <div style="color: red;">5</div>
+
+
+```
+- 만약, 다른 색상의 '5'를 출력하고 싶다면 새로운 함수를 만들어야한다.
+
+<br>
+
+> 사용후
+```javascript
+function sum(left, right) {
+  return left + right;
+}
+
+console.log(sum(2,3))
+console.log(`<div sytle="color:red;">${sum(2,3)}</div>`)
+
+//결과
+5
+<div sytle="color:red;">5</div>
+
+```
+
+
+
+
+
 
 
