@@ -20,7 +20,7 @@
   * **[비동기적 처리의 이해](./javascript/asynchoronous.md)**
   * **[className과 classList](./javascript/class_추가_변경_삭제_읽기.md)**
   * **[switch 조건문](./javascript/switch조건문.md)**
-  * **[반복문(while)](./javascript/loop.md)**
+  * **[반복문(while문)](./javascript/loop.md)**
   * **[함수(함수 정의, 매개변수, 인자, 리턴)](./javascript/function.md)**
   * **[객체 기본(this,constructor,prototype,class)](./javascript/객체.md)**
   * **[객체 고급(상속,super,call,bind,prototype,prototype link)](./javascript/객체_상속.md)**
