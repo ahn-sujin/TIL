@@ -50,17 +50,72 @@ console.log(Men);
 <br>
 
 ## filter함수 VS map함수
-- 공통점
-  -기존 배열은 건드리지 않으면서 요소들을 순회한 후 새로운 배열을 리턴한다.
-- 차이점
+- **공통점**
+  - 기존 배열은 건드리지 않으면서 요소들을 순회한 후 새로운 배열을 리턴한다.
+   
+- **차이점**
    - filter는 조건문을 만족한 요소들을 반환한다.
    - map은 콜백함수가 적용된 새요소들을 반환한다.
    
+<br>
 
+## filter함수
 
+배열을 순회하며 요소마다 조건을 확인 후 조건을 만족하는 원소들로 구성된 새로운 배열을 리턴한다.
 
+```javascript
+let newArray = arr.filter(callback(currentValue[, index, [array]]) {
+  // return element for newArray, if true
+}[, thisArg]);
+
+```
+- ```callback``` : 각 요소를 시험할 함수. **true를 반환하면 요소를 유지하고, false를 반환하면 버림**. 다음 세 가지 인수를 가짐
+- ```currentValue``` : 처리할 현재 요소
+- ```index(Optional)``` : 처리할 현재 요소의 인덱스
+- ```array(Optional)``` : filter()를 호출한 배열
+- ```thisArg(Optional)``` : callback을 실행할 때 this로 사용할 겂
 
 <br>
+
+> 예시
+
+```javascript
+
+const numbers = [1,4,9];
+let parameters = numbers.filter((num, index, arr) => {
+  console.log(num, index, arr)
+});
+
+//결과
+// 1 0 [ 1, 4, 9 ]
+// 4 1 [ 1, 4, 9 ]
+// 9 2 [ 1, 4, 9 ]
+
+```
+
+> 응용
+> 
+```javascript
+const users = [
+  { id: 85, name: 'William', age: 34, group: 'editor' },
+  { id: 97, name: 'Oliver', age: 28, group: 'admin' },
+  { id: 95, name: 'Ten', age: 20, group: 'admin' },
+  { id: 45, name: 'Min', age: 48, group: 'editor' },
+  { id: 75, name: 'Soo', age: 26, group: 'editor' }
+]
+let res = users.filter((it) => it.group.includes('editor'));
+
+console.log(res);
+
+//결과
+//[{ id: 85, name: 'William', age: 34, group: 'editor'},{ id: 45, name: 'Min', age: 48, group: 'editor'},{ id: 75, name: 'Soo', age: 26, group: 'editor' }]
+```
+
+<br>
+
+## map함수
+
+
 
 
 
