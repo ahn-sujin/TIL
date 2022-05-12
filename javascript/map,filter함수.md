@@ -63,6 +63,8 @@ console.log(Men);
 
 배열을 순회하며 요소마다 조건을 확인 후 조건을 만족하는 원소들로 구성된 새로운 배열을 리턴한다.
 
+<br>
+
 ```javascript
 let newArray = arr.filter(callback(currentValue[, index, [array]]) {
   // return element for newArray, if true
@@ -115,12 +117,54 @@ console.log(res);
 
 ## map함수
 
+배열을 순회하며 요소마다 callback함수 적용 후 새로운 배열로 리턴한다.
+
+<br>
+
+```javascript
+let newArray = arr.map(callback(currentValue[, index[, array]]) {
+  // return element for newArray, after executing something
+}
+
+```
+- ```callback``` : **새로운 배열 요소를 생성** 하는 함수. 다음 세가지 인수를 가짐
+- ```currentValue``` : 처리할 현재 요소
+- ```index(Optional)``` : 처리할 현재 요소의 인덱스
+- ```array(Optional)``` : map()를 호출한 배열
+- ```thisArg(Optional)``` : callback을 실행할 때 this로 사용할 값
+
+<br>
+
+> 예시
+```javascript
+let numbers = [1, 4, 9]
+
+// 화살표 함수
+let roots = numbers.map((num) => Math.sqrt(num))
+
+// roots is now     [1, 2, 3]
+// numbers is still [1, 4, 9]
+
+```
+
+<br>
+
+> 응용
+```javascript
+const users = [
+  { id: 85, name: 'William', age: 34, group: 'editor' },
+  { id: 97, name: 'Oliver', age: 28, group: 'admin' },
+  { id: 95, name: 'Ten', age: 20, group: 'admin' },
+  { id: 45, name: 'Min', age: 48, group: 'editor' },
+  { id: 75, name: 'Soo', age: 26, group: 'editor' }
+]
+let res = users.filter((it) => it.group.includes('editor'));
+let resName = res.map((user) => user.name);
+
+console.log(resName);
+// ['William', 'Min', 'Soo']
+
+```
 
 
-
-
-
-
-
- 
 
