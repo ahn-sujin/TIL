@@ -16,6 +16,8 @@
 
 <meta name='viewport' content='inital-scale=1, viewport-fit-cover'>
 ```
+- 먼저 노치 문제를 해결하기 위해서는 html 소스에서 viewport의 content 속성에 ```viewport-fit=cover``` 를 넣어줘야한다. 
+- viewport-fit의 기본값은 auto이다.
 
 <br>
 
@@ -34,8 +36,10 @@ env(safe-area-inset-right)
 env(safe-area-inset-bottom)
 env(safe-area-inset-left)
 
-
 ```
+- **ios 11.0 버전**에서는 ```constant()``` 속성을 사용한다.
+- **ios 11.2 버전 이상**부터는 ```env()```로 사용한다.
+- **ios 11.0과 11.2 버전 이상** 모두를 만족하려면 두 속성을 다 적용한다. 
 
 
 
