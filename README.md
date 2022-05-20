@@ -10,7 +10,7 @@
 <br>
 
 ## ✅CSS
-  * **[IOS 노치대응](./css/notch.md)** 
+  * **[IOS 노치대응](./css/safe_area.md)** 
 
  
 <br>
