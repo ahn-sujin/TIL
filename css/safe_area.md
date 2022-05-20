@@ -1,5 +1,7 @@
 # ios 노치대응
 
+![image](notch.png)
+
 <br>
 
 ## 노치(notch)란? 
