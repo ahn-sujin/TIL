@@ -17,7 +17,7 @@
 <meta name='viewport' content='inital-scale=1, viewport-fit-cover'>
 ```
 - 먼저 노치 문제를 해결하기 위해서는 html 소스에서 viewport의 content 속성에 ```viewport-fit=cover``` 를 넣어줘야한다. 
-- viewport-fit의 기본값은 auto이다.
+- ```viewport-fit```의 기본값은 auto이다.
 
 <br>
 
