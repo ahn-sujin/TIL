@@ -15,7 +15,7 @@
   - 이러한 의사 결정은 통계를 기반으로 해야한다. https://caniuse.com/ 는 이러한 통계를 제공하는 사이트이다.
   - ES6 classes를 검색하면 해당 문법을 지원하는 웹 브라우저들의 정보를 보여준다.
   - 지원하지 않는 브라우저에서는 기존에 존재하는 문법을 사용한다.
-  - https://babeljs.io/ (Babel)은 **새로운 문법을 기존의 문법으로 치환해주는 javascript compiler**이다.
+  - https://babeljs.io/ **(Babel)** 은 **새로운 문법을 기존의 문법으로 치환해주는 javascript compiler**이다.
 - ```class```를 사용하게 되면 생성자의 기능은 그대로면서 코드의 양을 줄여주고, 직관적으로 코드를 볼수 있게 해준다.
 
 <br>
@@ -23,7 +23,7 @@
 ## class를 이용한 객체 생성
 ```javascript
 class Score {
-
+ 
 }
 let ahn = new Score();
 
