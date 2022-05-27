@@ -53,3 +53,5 @@ console.log(dogInfo.length); //3
 
 ```
 
+[배열 내장함수 자세히]()
+
