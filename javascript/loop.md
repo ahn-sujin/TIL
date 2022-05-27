@@ -146,6 +146,9 @@ console.log(Object.values(doggy));
 - ```Object.keys``` : ```[키, 키, 키]``` 형태의 배열로 변환
 - ```Object.values``` : ```[값, 값, 값]``` 형태의 배열로 변환
  
+ <br>
+ 
+ ## [연습]배열에서 3보다 큰 값 구하기 
 
 
 
