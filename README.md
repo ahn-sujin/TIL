@@ -25,7 +25,7 @@
   * **[함수(함수 정의, 매개변수, 인자, 리턴)](./javascript/function.md)**
   * **[배열 내장함수(forEach, map, indexOf, findIndex, find, filter, splice, slice, shift, pop, unshift, concat, join, reduce)](./javascript/내장함수.md)**
   * **[switch 조건문](./javascript/switch조건문.md)**
-  * **[반복문(while문)](./javascript/loop.md)**
+  * **[반복문(for문,while문)](./javascript/loop.md)**
   * **[getter, setter](./javascript/getter,setter.md)**
   * **[객체 기본(this, constructor, prototype, class)](./javascript/객체.md)**
   * **[객체 고급(상속, super, call, bind, prototype, prototype link)](./javascript/객체_상속.md)**
