@@ -86,6 +86,78 @@ document.write(i);
 <br>
 
 ## for ... of
+- ```for...of 문```은 배열에 관한 반복문을 돌리기 위해서 만들어졌다.
+- 하지만 배열에서는 보통 내장함수를 많이 사용하기 때문에 거의 사용하지 않는다.
+
+```javascript
+let numbers = [10, 20, 30, 40, 50];
+for (let number of numbers) {
+  console.log(number);
+}
+
+// 결과
+// 10  20 30 40 50
+
+```
+
+<br>
+
+## for ... in
+- ```for ... in 문```은 객체에 관란 반복문을 돌리기 위해서 만들어졌다.
+
+```javascript
+
+const doggy = {
+  name: '멍멍이',
+  sound: '멍멍',
+  age: 2
+};
+
+for (let key in doggy) {
+  console.log(`${key}: ${doggy[key]}`);
+}
+
+//결과 
+// name : 멍멍이
+// sound : 멍멍
+// age :  2
+
+```
+
+### ➕ 객체의 정보를 배열 형태로 받아올 수 있는 함수
+```javascript
+const doggy = {
+  name: '멍멍이',
+  sound: '멍멍',
+  age: 2
+};
+
+console.log(Object.entries(doggy));
+// [['name','멍멍이'],['sound','멍멍'],['age': 2]]
+
+console.log(Object.keys(doggy));
+// [name, sound, 2]
+
+console.log(Object.values(doggy));
+// ['멍멍이', '멍멍', age]
+
+```
+- ```Object.entries``` : ```[[키, 값], [키, 값]]``` 형태의 배열로 변환
+- ```Object.keys``` : ```[키, 키, 키]``` 형태의 배열로 변환
+- ```Object.values``` : ```[값, 값, 값]``` 형태의 배열로 변환
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
