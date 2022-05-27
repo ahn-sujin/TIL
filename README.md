@@ -22,7 +22,7 @@
   * **[Primitive Types](./javascript/Primitive_Types.md)**
   * **[Value Types and Reference Types](./javascript/value_types_and_reference_types.md)**
   * **[className과 classList](./javascript/class_추가_변경_삭제_읽기.md)**
-  * **[함수(함수 정의, 매개변수, 인자, 리턴)](./javascript/function.md)*
+  * **[함수(함수 정의, 매개변수, 인자, 리턴)](./javascript/function.md)**
   * **[배열 내장함수](./javascript/내장함수.md)**
   * **[switch 조건문](./javascript/switch조건문.md)**
   * **[반복문(while문)](./javascript/loop.md)**
@@ -33,7 +33,6 @@
   * **[비동기적 처리의 이해](./javascript/asynchoronous.md)**
   * **[객체 지향 프로그래밍](./javascript/opp.md)**
   * **[Navigatior객체 & Geolocation API](./javascript/geolacation.md)** 
-  * 
   <hr>
   
   ### 오류해결
