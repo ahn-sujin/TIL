@@ -192,3 +192,41 @@ console.log(biggerThanThree(numbers));  // [4,5,6,7]
 
 ```
 
+### ➕ 배열에서 최대값, 최소값 구하기
+
+> Math.max(), Math.min()
+
+```javasciprt
+const maxValue = Math.max(1,2,3,4,5);
+const minValue = Math.min(1,2,3,4,5);
+
+console.log(maxValue) // 5
+console.log(minValue) // 1
+
+```
+- ```Math.max()``` ```Math.min()``` 는 파라미터로 받는 값 중 최대값, 최소값을 구해서 리턴하는 함수이다. 
+- 이 함수를 사용해 배열의 최대값과 최소값을 구하려면 배열의 원소들을 꺼내서 함수의 파라미터로 전달하면 된다.
+
+
+> Spread Operator(전개 연산자) 사용하기
+
+```javascript
+const arr = [1,2,3,4,5];
+const maxValue = Math.max(...arr);
+const minValue = Math.min(...arr);
+
+console.log(maxValue) // 5
+console.log(minValue) // 1
+
+```
+- **Spread Operator(전개 연산자)** 는 ES6문법으로 ```...``` 점 3개로 표현하고, **객체나 배열의 원소들을 하나씩 꺼내서 리턴**한다.
+  
+  [Spread Operator(전개 연산자) 자세히🔎]()
+
+
+
+
+
+
+
+
