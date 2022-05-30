@@ -149,21 +149,46 @@ console.log(Object.values(doggy));
  <br>
  
  ## [연습]배열에서 3보다 큰 값 구하기 
+ 
+> 문제
+```javascript
+function biggerThanThree(numbers) {
 
+}
 
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(biggerThanThree(numbers)); 
 
+```
 
+> 풀이1
+```javascript
+function biggerThanThree(numbers) {
+  let newArray = [];
+  
+  for(let i =0; i < numbers.length; i++){
+    if(3 < numbers[i]){
+      newArray.push(numbers[i])
+    }
+  }
+  
+  return newArray;
+}
 
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(biggerThanThree(numbers));  // [4,5,6,7]
 
+```
 
+> 풀이2
+```javascript
+function biggerThanThree(numbers) {
+  numbers = numbers.filter((number) => number > 3)
+  return numbersl
+}
 
+const numbers = [1, 2, 3, 4, 5, 6, 7];
+console.log(biggerThanThree(numbers));  // [4,5,6,7]
 
-
-
-
-
-
-
-
-
+```
 
