@@ -11,7 +11,11 @@
 
 ## ✅CSS
   * **[IOS 노치대응](./css/safe_area.md)** 
+ 
+<br>
 
+## ✅Error
+  * **[addEventListener](./Error/addEventListener오류.md)**
  
 <br>
 
@@ -33,11 +37,6 @@
   * **[비동기적 처리의 이해](./javascript/asynchoronous.md)**
   * **[객체 지향 프로그래밍](./javascript/opp.md)**
   * **[Navigatior객체 & Geolocation API](./javascript/geolacation.md)** 
-  <hr>
-  
-  ### 오류해결
-  * **[addEventListener](./javascript/addEventListener오류.md)**
-
 
 <br>
 
