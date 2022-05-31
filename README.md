@@ -1,23 +1,7 @@
 
 # 💡Today I Learn 
     이곳은 공부한 내용을 요약 정리하여 작성하는 공간 입니다.
-    
-<br>    
-
-## ✅Markdown
-  * **[마크다운 사용법 정리](./markdown.md)** 
- 
-<br>
-
-## ✅CSS
-  * **[IOS 노치대응](./css/safe_area.md)** 
- 
-<br>
-
-## ✅Error
-  * **[addEventListener](./Error/addEventListener오류.md)**
-  * **[yarn : 이 시스템에서 스크립트를 실행할 수 없으므로...](./Error/yarn.md)**
- 
+     
 <br>
 
 ## ✅Javascript
@@ -69,7 +53,22 @@
  * **[React Component 사용](./react/react_02.md)**
  * **[React 이벤트 생성](./react/react_03.md)** -->
 
+<br>   
 
+## ✅Error
+  * **[addEventListener](./Error/addEventListener오류.md)**
+  * **[yarn : 이 시스템에서 스크립트를 실행할 수 없으므로...](./Error/yarn.md)**
+ 
+<br>
+
+## ✅CSS
+  * **[IOS 노치대응](./css/safe_area.md)** 
+
+<br>
+
+## ✅Markdown
+  * **[마크다운 사용법 정리](./markdown.md)** 
+ 
 
 
 <br>
