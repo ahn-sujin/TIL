@@ -97,11 +97,11 @@ Score.prototype.sum = function() {
 
 let ahn = new Score('sujin',90, 100);
 console.log('ahn : ', ahn);
-console.log('ahn : ', ahn.sum());
+console.log('ahn,sum() : ', ahn.sum());
 
 //결과
 // ahn: Score{name:'sujin', first:90, second:100}
-// ahn :  prototype:190
+// ahn,sum() :  prototype:190
 
 ```
 
@@ -122,17 +122,17 @@ class Score{
 
 let ahn = new Score('sujin',90,100);
 console.log('ahn : ',ahn);
-console.log("ahn.sum()",ahn.sum());
+console.log("ahn.sum() :",ahn.sum());
 
 let kim = new Score('gildong',60,50);
 console.log('kim : ',kim);
-console.log("kim.sum()",kim.sum());
+console.log("kim.sum() :",kim.sum());
 
 // 결과
 // ahn : Score{name:'sujin', first:90, second:100}
-// ahn : prototype:190
+// ahn.sum() : prototype:190
 // kim : Score{name:'gildong', first:60, second:50}
-// kim : prototype:110
+// kim.sum() : prototype:110
 
 ```
 - 메소드 ```sum```은 같은 class에 속해있는 모든 객체들이 공유하는 메소드임을 알 수 있다.
@@ -145,6 +145,14 @@ let ahn = new Score('sujin',90,100);
 ahn.sum = function(){
   return 'this:' + (this.first + this.second);
 }
+
+console.log('kim.sum():', kim.sum());
+console.log('ahn.sum():', ahn.sum());
+
+
+//결과
+// kim.sum(): prototype:110
+// ahn.sum(): this:190
 
 ```
 - 어떤 객체(```ahn``` 객체)의 특성(```sum``` 메소드)을 호출하면, 자바스크립트는 그 객체가 해당 특성을 가지고 있는지 확인하고, 있다면 그 객체에서 특성을 호출한다.
