@@ -19,7 +19,6 @@
   * **[객체 기본(this, constructor, prototype, class)](./javascript/객체.md)**
   * **[객체 고급(상속, super, call, bind, prototype, prototype link)](./javascript/객체_상속.md)**
   * **[배열안에 있는 객체 값 가져오기(map함수와 filter함수)](./javascript/map,filter함수.md)** 
-  * **[비동기적 처리의 이해](./javascript/asynchoronous.md)**
   * **[객체 지향 프로그래밍](./javascript/opp.md)**
   * **[Navigatior객체 & Geolocation API](./javascript/geolacation.md)** 
 
@@ -29,7 +28,8 @@
   * **[import / export](./ES6/modules.md)** 
   * **[Template Literal](./ES6/TemplateLiteral.md)**
   * **[화살표함수(Arrow function)](./ES6/arrowFunction.md)**
-  * **[class](./ES6/class.md)** 
+  * **[class](./ES6/class.md)**
+  * **[비동기적 처리의 이해](./javascript/asynchoronous.md)** 
   * **[promise](./ES6/promise.md)** 
   * **[async&await](./ES6/async&await.md)**
   * **[비구조화 할당](./ES6/destructuring_assignment.md)**
