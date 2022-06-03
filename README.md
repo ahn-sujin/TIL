@@ -32,6 +32,7 @@
   * **[비동기적 처리의 이해](./javascript/asynchoronous.md)** 
   * **[promise](./ES6/promise.md)** 
   * **[async&await](./ES6/async&await.md)**
+  * **[promise.all / promise.race](./ES6/promise_all.md)** 
   * **[비구조화 할당](./ES6/destructuring_assignment.md)**
   * **[spread 연산자 와 rest 파라미터](./ES6/spread.md)**   
 
