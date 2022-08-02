@@ -48,10 +48,8 @@
  
 <br>
 
-<!-- ## ✅React
- * **[React 소개 및 개발 환경 설정](./react/react.md)**
- * **[React Component 사용](./react/react_02.md)**
- * **[React 이벤트 생성](./react/react_03.md)** -->
+## ✅React
+ * **[React기초 개념 정리](https://github.com/ahn-sujin/create-react-app-voca/blob/main/README.md)**
 
 <br>   
 
