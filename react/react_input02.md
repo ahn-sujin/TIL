@@ -39,7 +39,7 @@ const InputSample = () => {
 export default InputSample;
 
 ```
-- 위의 방법은 늘어난 input갯수 만큼 input을 관리하기 위한 state와 onChange함수를 생성해야하기 때문에 좋은 방법이 아니다. (input의 상태 관리를 한번에 할 수 없음)
+- 위의 방법은 늘어난 input갯수 만큼 input을 관리하기 위한 ```state```와 ```onChange```함수를 생성해야하기 때문에 좋은 방법이 아니다. (input의 상태 관리를 한번에 할 수 없음)
 
 
 
