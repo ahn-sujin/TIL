@@ -50,6 +50,8 @@
 
 ## ✅React
  * **[React기초 개념 정리](https://github.com/ahn-sujin/create-react-app-voca/blob/main/README.md)**
+ * **[useState를 통해 동적인 값 관리하기](https://github.com/ahn-sujin/create-react-app-voca/blob/main/summary/react10.md)**
+ <!-- * **[input 상태관리하기]()** -->
 
 <br>   
 
