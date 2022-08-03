@@ -89,14 +89,8 @@ export default InputSample;
   - 객체 상태를 업데이트 할 때는 꼭 기존의 상태를 한번 복사하고 나서 특정값을 덮어 씌우고 새로운 값을 설정 해주어야한다. 이것을 **불변성**을 지켜준다고 함. 이렇게 해야 리액트에서 업데이트 된 것을 감지하고 랜더링한다.
   - **불변성** 을 지켜줘야지만 나중에 컴포넌트 업데이트 성능을 최적화시켜줄 수 있다. 
 
+<br>
 
-
-
-
-
-
-
-
-
+[예시 보러가기](https://codesandbox.io/s/input-yeoreogae-sangtaegwanri-dklpo1?file=/src/App.js)
 
 
