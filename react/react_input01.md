@@ -41,7 +41,7 @@ export default InputSample;
   - 이벤트를 등록하는 함수에서 이벤트 객체인 ```e```를 파라미터로 받아와서 사용한다.
   - ```e.target```은 이벤트가 발생한 input을 가르키게 된다.
   - ```e.target.value```는 현재 input에 입력한 값이 무엇인지 알수 있다.
-- input value 값을 ```useState```를 통해서 관리하시
+- input value 값을 ```useState```를 통해서 관리하기
   - ```setText(e.target.value);``` 에서 변화하는 input의 value값을 ```setText```를 통해서 변경해주고 변경된 값을 ```text```로 넘겨준다.
 - inputd의 value값 설정해주기
   - input에 있는 value값을 ```{text}```로 설정해주어야 text의 값이 바뀌었을 때 input의 값이 바뀔 수 있다.
