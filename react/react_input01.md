@@ -33,8 +33,8 @@ export default InputSample;
 
 ```
 
-![리액트 input 상태관리](./images/react_input.mov.gif)
-
+ <img src="./images/react_input.mov.gif" width="600"/>
+ 
 - 구현내용
   - input에 입력한 값이 하단에 나타나고, 초기화 버튼을 누르면 input값이 없어지도록 구현한다.
 - input onChange이벤트
