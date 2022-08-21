@@ -62,12 +62,17 @@
  
 <br>
 
-## ✅CSS
-  * **[IOS 노치대응](./css/safe_area.md)** 
+## ✅HTML&CSS
+* **[IOS 노치대응](./css/safe_area.md)**
+* **[Semantic Web, Semantic Tags 이해하기](https://velog.io/@ahn-sujin/Semantic-Web-Semantic-Tags-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0** 
+* **[<img> 와 background-image의 차이](https://velog.io/@ahn-sujin/HTMLCSS-img-%EC%99%80-background-image%EC%9D%98-%EC%B0%A8%EC%9D%B4)**
+* **[position속성 - relative, absolute, fixed](https://velog.io/@ahn-sujin/CSS-position%EC%86%8D%EC%84%B1-relative-absolute-fixed)** 
+* **[inline, inline-block,block에 대해서](https://velog.io/@ahn-sujin/CSS-inline-inline-blockblock%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C)** 
+
 
 <br>
 
-## ✅Markdown
+## ✅ETC
   * **[마크다운 사용법 정리](./markdown.md)** 
  
 
