@@ -5,7 +5,7 @@
 <br />
 
 ## 📅 Monthly I Learn
-* **[2024.01]()**
+* **[2024.01](https://github.com/ahn-sujin/TIL/blob/main/MIL/mli-202401.md)**
 
 
 <br>
