@@ -1,10 +1,24 @@
 
 # 💡Today I Learn 
-    이곳은 공부한 내용을 요약 정리하여 작성하는 공간 입니다.
-     
+> 이곳은 공부한 내용을 요약 정리하여 작성하는 공간입니다.
+
+<br />
+
+## 📅 Monthly I Learn
+* **[2024.01]()**
+
+
 <br>
 
-## ✅Javascript
+## ✅ React
+ * **[React기초 개념 정리](https://github.com/ahn-sujin/create-react-app-voca/blob/main/README.md)**
+ * **[useState를 통해 동적인 값 관리하기](https://github.com/ahn-sujin/create-react-app-voca/blob/main/summary/react10.md)**
+ * **[input 상태관리하기](./react/react_input01.md)** 
+ * **[input 여러개 상태관리하기](./react/react_input02.md)** 
+
+<br>
+     
+## ✅ Javascript
   * **[javascript에 대한 기초 지식 및 이론 정리](./javascript/javascript.md)** 
   * **[JSON.parse / JSON.stringify](./javascript/JSON.md)** 
   * **[Call Stack](./javascript/callstack.md)**
@@ -24,7 +38,7 @@
 
 <br>
 
-## ✅ES6
+## ✅ ES6
   * **[import / export](./ES6/modules.md)** 
   * **[Template Literal](./ES6/TemplateLiteral.md)**
   * **[화살표함수(Arrow function)](./ES6/arrowFunction.md)**
@@ -38,15 +52,7 @@
 
 <br>
 
-## ✅React
- * **[React기초 개념 정리](https://github.com/ahn-sujin/create-react-app-voca/blob/main/README.md)**
- * **[useState를 통해 동적인 값 관리하기](https://github.com/ahn-sujin/create-react-app-voca/blob/main/summary/react10.md)**
- * **[input 상태관리하기](./react/react_input01.md)** 
- * **[input 여러개 상태관리하기](./react/react_input02.md)** 
-
-<br>
-
-## ✅vue
+## ✅ vue
  * **[인스턴스 & 컴포넌트](./vue/vue01.md)**
  * **[라우터 & HTTP통신](./vue/vue02.md)**
  * **[템플릿](./vue/vue03.md)**
@@ -56,13 +62,13 @@
  
 <br>   
 
-## ✅Error
+## ✅ Error
   * **[addEventListener](./Error/addEventListener오류.md)**
   * **[yarn : 이 시스템에서 스크립트를 실행할 수 없으므로...](./Error/yarn.md)**
  
 <br>
 
-## ✅HTML&CSS
+## ✅ HTML&CSS
 * **[IOS 노치대응](./css/safe_area.md)**
 * **[Semantic Web, Semantic Tags 이해하기](https://velog.io/@ahn-sujin/Semantic-Web-Semantic-Tags-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)** 
 * **[```<img>``` 와 background-image의 차이](https://velog.io/@ahn-sujin/HTMLCSS-img-%EC%99%80-background-image%EC%9D%98-%EC%B0%A8%EC%9D%B4)**
@@ -72,7 +78,7 @@
 
 <br>
 
-## ✅ETC
+## ✅ ETC
   * **[마크다운 사용법 정리](./markdown.md)** 
  
 
